@@ -37,3 +37,20 @@ counters.forEach(counter => {
   counter.innerText = '0'; // garante que começa zerado
   observer.observe(counter);
 });
+
+// Menu toggle functionality
+
+const menuToggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu');
+const submenuLink = document.querySelector('.has-submenu > a');
+const submenu = document.querySelector('.submenu');
+
+menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+});
+
+/* Submenu no clique */
+submenuLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    submenu.classList.toggle('active');
+});
