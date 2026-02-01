@@ -1,0 +1,17 @@
+Fontes: Roboto
+
+Cores:
+#eb2019 
+#042b55
+#f8ef1e
+
+
+.banner {
+            height: 100vh;
+            background-image: url("imagens/banner.jpeg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
