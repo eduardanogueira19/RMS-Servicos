@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalhe Conosco | RMS Serviços – Cubatão SP</title>
     <meta name="description" content="Envie seu currículo e faça parte da equipe RMS Serviços. Oportunidades na área elétrica, automação e instrumentação na Baixada Santista.">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 
     <style>
         /* FORMULÁRIO */
@@ -100,10 +99,13 @@
     <header class="header">
         <div class="container">
             <img 
-                src="#" 
+                src="../imagens/Logotipo.png" 
                 alt="Logo da Empresa" 
                 class="logo"
             >
+            <button class="menu-toggle" aria-label="Abrir menu">
+                ☰
+            </button>
             <nav>
                 <ul class="menu">
                     <li><a href="../index.html">HOME</a></li>
@@ -114,8 +116,7 @@
                         <ul class="submenu">
                             <li><a href="trabalheconosco.html">TRABALHE CONOSCO</a></li>
                         </ul>
-                    </li>
-                    <li><a style="color: #fff; border-radius: 50px;" href="https://wa.me/55139884431354" class="btn btn-primary" target="_blank">ORÇAMENTO</a></li>
+                    <li><a style="background-color:#021f3f; color:  #fff; border-radius: 50px;" href="https://wa.me/55139884431354" class="btn btn-primary" target="_blank">ORÇAMENTO</a></li>
                     </li>
                 </ul>
             </nav>
@@ -144,6 +145,15 @@
 
                     <label>Cargo desejado</label>
                     <input type="text" name="cargo">
+
+                     <!-- 🔽 CAMPO CURRÍCULO -->
+                    <label>Anexar currículo</label>
+                    <input 
+                        type="file" 
+                        name="curriculo"
+                        accept=".pdf,.doc,.docx"
+                        required
+                    >
 
                     <label>Mensagem</label>
                     <textarea name="mensagem"></textarea>
@@ -189,5 +199,6 @@
             window.open(`https://wa.me/5513999999999?text=${texto}`, '_blank');
         }
     </script>
+    <script src="../js/menu.js"></script>
 </body>
 </html>

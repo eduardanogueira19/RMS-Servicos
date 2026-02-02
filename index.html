@@ -7,16 +7,14 @@
     <meta name="description" content="Há 13 anos oferecendo soluções em elétrica, automação e instrumentação industrial na Baixada Santista e SP. Projetos, execução e mão de obra especializada.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RMS Serviços</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 
@@ -24,7 +22,7 @@
         /*BANNER*/
         .banner {
             height: 100vh;
-            background-image: url("imagens/banner.jpeg");
+            background-image: url("imagens/banner2.png");
             background-size: cover;
             background-position: center;
             display: flex;
@@ -277,7 +275,7 @@
         /*CLIENTES*/
         .carousel {
             width: 100%;
-            overflow: hidden;
+            overflow: visible; /*Carrossel sair da tela*/
             background: #fff;
             padding: 50px 0;
         }
@@ -342,16 +340,13 @@
     <header class="header">
         <div class="container">
             <img 
-                src="#" 
+                src="imagens/Logotipo.png" 
                 alt="Logo da Empresa" 
                 class="logo"
             >
-
             <button class="menu-toggle" aria-label="Abrir menu">
                 ☰
             </button>
-
-
             <nav>
                 <ul class="menu">
                     <li><a href="index.html">HOME</a></li>
@@ -374,7 +369,7 @@
             <div class="hero-text">
                 <div>
                     <h2 class="subtitulo">EFICIÊNCIA - INOVAÇÃO - SEGURANÇA</h2>
-                    <h1 >OFERECEMOS SOLUÇÕES EM ELÉTRICA, 
+                    <h1 style="color: #ffffff;" >OFERECEMOS SOLUÇÕES EM ELÉTRICA, 
                     AUTOMAÇÃO E INSTRUMENTAÇÃO.</h1>
                     <p>Há 13 anos atuando com soluções completas, desde de projetos <br>elétricos e de automação até mão de obra especializada.</p>
                 </div>
@@ -609,9 +604,10 @@
     </footer>
     <div class="rodape2">
             <p>© 2026 - RMS Serviços. Todos os direitos reservados.</p>
-            <p>Design: <a href="https://wa.me/55139884431354">Nogueira</a></p>
+            <p>Design: <a href="https://wa.me/5513988431354">Nogueira</a></p>
     </div>
-    <script src="script.js"></script>
+    <script src="js/number.js"></script>
+    <script src="js/menu.js"></script>
 
 </body>
 </html>

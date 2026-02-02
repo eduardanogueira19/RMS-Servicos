@@ -1,0 +1,270 @@
+/*CONFIGURAÇÃO GERAL (NAVEGADOR)*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* HEADER */
+.header {
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+}
+
+.header .container {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo {
+    width: 65px;
+}
+/*Menu*/
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+
+}
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+/* botão hamburguer escondido no desktop */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+
+.menu a:hover {
+    color: #eb2019;
+
+}
+
+.btn {
+    padding: 14px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+/* Botão principal */
+.btn-primary {
+    background: #ffd700;
+    color: #021f3f;
+}
+
+.btn-primary:hover {
+    background: #fff ;
+    color: #021f3f;
+}
+
+/*Submenu*/
+/* SUBMENU */
+.menu li {
+    position: relative;
+}
+
+.has-submenu > a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff ;
+    list-style: none;
+    padding: 10px 0;
+    min-width: 220px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    display: none;
+    z-index: 999;
+}
+
+.submenu li {
+    width: 100%;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px 20px;
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+}
+
+.submenu li a:hover {
+    
+    color: #eb2019;
+}
+
+/* Mostrar submenu no hover */
+.has-submenu:hover .submenu {
+    display: block;
+}
+/*Section*/
+section {
+    padding: 40px 0;
+}
+
+
+/*Fontes*/
+
+
+
+/*Titulos e paragrafos*/
+h1{
+    color: #042b55;
+    font-size: 35px;
+    margin-top: 25px;
+    
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    color: #042b55;
+    font-size: 28px;
+    margin-bottom: 25px;
+    text-align: center;}
+
+h3 {
+    color: #ffffff;
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h4 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h5 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+p{
+    font-size: 18px;
+    
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: start;
+    
+    
+}
+
+/* FOOTER */
+.footer {
+    background-color: #021f3fe8;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.contato-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+    flex-wrap: wrap;
+    
+}
+
+.local p {
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Archivo', sans-serif;
+}
+
+.contatos p {
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Archivo', sans-serif;
+}
+
+.juntese p {
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Archivo', sans-serif;
+}
+.juntese a {
+    text-decoration: none;
+    color: #ffd700;
+}
+
+.rodape2 {
+    background-color: #ffd700;
+    width: 100%;
+    height: 40px;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between; /* centraliza horizontalmente */
+    align-items: center;     /* alinha verticalmente */
+    gap: 20px;          /* espaço entre os textos */
+    flex-wrap: wrap;         /* evita quebrar feio em telas pequenas */
+    padding: 0 20px;
+}
+
+.rodape2 p {
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Archivo', sans-serif;
+    text-align: center;
+}
+
+.rodape2 a {
+    color: #021f3fe8;
+    text-decoration: none;
+}
+

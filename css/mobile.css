@@ -1,0 +1,211 @@
+
+/* ===============================
+   RESPONSIVO - CELULAR
+   Telas até 768px
+================================ */
+@media (max-width: 768px) {
+
+    /* -------- GERAL -------- */
+
+    body {
+        font-size: 16px; /* texto um pouco menor no celular */
+    }
+
+    section {
+        padding: 60px 0; /* menos espaço vertical */
+    }
+
+    /* -------- HEADER -------- */
+
+    .header .container {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    nav {
+    display: block;
+    }
+    
+    .menu-toggle {
+        display: block;
+        font-size: 26px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-left: 200px;
+        
+    }
+
+    /* esconde o menu */
+    .menu {
+        display: none;
+        flex-direction: column; /* links em coluna */
+        position: absolute;
+        top: 100%; /* abaixo do header */
+        right: 0;
+        width: 100%;
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    /* quando estiver ativo */
+    .menu.active {
+        display: flex;
+    }
+
+    /* mostra o botão */
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu a {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+
+    /* -------- BANNER / HERO -------- */
+
+    .banner,
+    .banner-content {
+        height: auto; /* evita altura gigante no celular */
+        padding: 120px 0 80px;
+    }
+
+    .hero-text {
+        margin-left: 0;
+        padding: 0 20px; /* respiro lateral */
+        text-align: center;
+    }
+
+    .subtitulo {
+        margin-left: 0;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .banner-content h1 {
+        font-size: 26px;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .banner-content p {
+        font-size: 16px;
+        margin: 0;
+        text-align: center;
+    }
+
+    /* Botões um embaixo do outro */
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .hero-buttons a {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* -------- STATS (NÚMEROS) -------- */
+
+    .stats {
+        flex-direction: column; /* empilha */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .stat-box {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    /* -------- DIFERENCIAIS -------- */
+
+    .diferenciais-container {
+        flex-direction: column; /* imagem em cima, texto embaixo */
+        padding: 0 20px;
+    }
+
+    .diferenciais-img,
+    .diferenciais {
+        width: 100%;
+    }
+
+    .diferenciais h2 {
+        text-align: center;
+    }
+
+    .diferenciais .card {
+        width: 100%;
+    }
+
+    /* -------- SERVIÇOS -------- */
+
+    .servicos-container {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .servicos-content,
+    .servicos-img {
+        width: 100%;
+    }
+
+    .servicos-img {
+        min-height: 220px;
+        margin-top: 30px;
+    }
+
+    .servicos-content .card {
+        width: 100%;
+    }
+
+    /* -------- CARROSSEL CLIENTES -------- */
+
+    .carousel-track img {
+        height: 90px; /* logos menores */
+        margin: 0 20px;
+    }
+
+    /* -------- ÁREA DE ATUAÇÃO -------- */
+
+    .area-atuacao {
+        padding: 40px 20px;
+    }
+
+    .area-atuacao p {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    /* -------- CTA FINAL -------- */
+
+    .cta-final p {
+        margin: 20px 0;
+        padding: 0;
+    }
+
+    /* -------- FOOTER -------- */
+
+    .contato-principal {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .rodape2 {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 5px;
+    }
+}
