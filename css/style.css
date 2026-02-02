@@ -44,6 +44,12 @@ html, body {
 .logo {
     width: 60px;
 }
+
+.logo:hover{
+    transform: scale(1.6);
+    transition: all 1s ease;
+
+}
 /*Menu*/
 nav{
     width: 100%;
