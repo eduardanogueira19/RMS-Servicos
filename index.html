@@ -42,6 +42,11 @@
             justify-content: center; /* centraliza tudo verticalmente */
         }
 
+        .banner-content > div {
+            max-width: 700px;
+            margin-left: 5%;
+        }
+
         .subtitulo {
             color: #ffd700;
             font-size: 17px;
@@ -69,12 +74,28 @@
         }
 
 
+        
         /* BOTÕES HERO */
+
+        .hero-text {
+            max-width: 700px;
+            margin-left: 5%;
+        }
+
+        .hero-text h1,
+        .hero-text p,
+        .hero-text h2 {
+            margin-left: 0;
+            margin-right: 0;
+            text-align: left;
+        }
+
+
         .hero-buttons {
             display: flex;
             justify-content: left;
             gap: 20px;
-            margin-left: 5%;
+            margin-top: 20px;
             margin-top: -2%;
             align-items: center;
         }
@@ -96,6 +117,7 @@
 
         .btn-primary:hover {
             background: #fff ;
+            color: #021f3f;
         }
 
         /* Botão secundário */
@@ -255,7 +277,7 @@
         /*CLIENTES*/
         .carousel {
             width: 100%;
-            overflow: visible;
+            overflow: hidden;
             background: #fff;
             padding: 50px 0;
         }
@@ -349,17 +371,19 @@
     <!-- BANNER -->
      <section class="banner">
         <div class="banner-content">
-            <div>
-                <h2 class="subtitulo">EFICIÊNCIA - INOVAÇÃO - SEGURANÇA</h2>
-                <h1 >OFERECEMOS SOLUÇÕES EM ELÉTRICA, 
-                <br>AUTOMAÇÃO E INSTRUMENTAÇÃO.</h1>
-                <p>Há 13 anos atuando com soluções completas, desde de projetos <br>elétricos e de automação até mão de obra especializada.</p>
-            </div>
+            <div class="hero-text">
+                <div>
+                    <h2 class="subtitulo">EFICIÊNCIA - INOVAÇÃO - SEGURANÇA</h2>
+                    <h1 >OFERECEMOS SOLUÇÕES EM ELÉTRICA, 
+                    AUTOMAÇÃO E INSTRUMENTAÇÃO.</h1>
+                    <p>Há 13 anos atuando com soluções completas, desde de projetos <br>elétricos e de automação até mão de obra especializada.</p>
+                </div>
             
                 <!--Botoes-->
-            <div class="hero-buttons">
-                <a href="html/contato.html" class="btn btn-primary">Solicitar Orçamento</a>
-                <a href="html/servicosobras.html" class="btn btn-outline">Conheça Nossos Serviços</a>
+                <div class="hero-buttons">
+                    <a href="html/contato.html" class="btn btn-primary">Solicitar Orçamento</a>
+                    <a href="html/servicosobras.html" class="btn btn-outline">Conheça Nossos Serviços</a>
+                </div>
             </div>
             
         </div>
@@ -588,5 +612,6 @@
             <p>Design: <a href="https://wa.me/55139884431354">Nogueira</a></p>
     </div>
     <script src="script.js"></script>
+
 </body>
 </html>

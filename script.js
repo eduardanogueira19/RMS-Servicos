@@ -39,18 +39,17 @@ counters.forEach(counter => {
 });
 
 // Menu toggle functionality
+  const menuToggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+  const links = document.querySelectorAll('.menu a');
 
-const menuToggle = document.querySelector('.menu-toggle');
-const menu = document.querySelector('.menu');
-const submenuLink = document.querySelector('.has-submenu > a');
-const submenu = document.querySelector('.submenu');
-
-menuToggle.addEventListener('click', () => {
+  menuToggle.addEventListener('click', () => {
     menu.classList.toggle('active');
-});
+  });
 
-/* Submenu no clique */
-submenuLink.addEventListener('click', (e) => {
-    e.preventDefault();
-    submenu.classList.toggle('active');
-});
+  // Fecha o menu quando clicar em um link
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.remove('active');
+    });
+  });
