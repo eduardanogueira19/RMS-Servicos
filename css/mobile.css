@@ -6,9 +6,14 @@
 @media (max-width: 768px) {
 
     /* -------- GERAL -------- */
-
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
     body {
-        font-size: 16px; /* texto um pouco menor no celular */
+        font-size: 16px; 
     }
 
     section {
@@ -25,11 +30,11 @@
     }
 
     .header {
-        position: relative;
+        position: fixed;
     }
 
     nav {
-    display: block;
+        display: block;
     }
     
     .menu-toggle {
@@ -45,9 +50,9 @@
     /* esconde o menu */
     .menu {
         display: none;
-        flex-direction: column; /* links em coluna */
+        flex-direction: column; 
         position: absolute;
-        top: 100%; /* abaixo do header */
+        top: 100%; 
         right: 0;
         width: 100%;
         background: #f8fafcff;
@@ -66,23 +71,26 @@
     }
 
     .menu a {
-        padding: 10px 0;
+        padding: 5px 0;
         text-align: center;
+        font-size: 14px;
     }
+
 
 
     /* -------- BANNER / HERO -------- */
 
     .banner,
     .banner-content {
-        height: auto; /* evita altura gigante no celular */
+        min-height: 100vh;
         padding: 120px 0 80px;
     }
 
+
     .hero-text {
         margin-left: 0;
-        padding: 0 20px; /* respiro lateral */
-        text-align: center;
+        padding: 10 20px; /* respiro lateral */
+        text-align: left;
     }
 
     .subtitulo {
@@ -94,20 +102,22 @@
     .banner-content h1 {
         font-size: 26px;
         margin: 20px 0;
-        text-align: center;
+        text-align: left;
     }
 
     .banner-content p {
         font-size: 16px;
         margin: 0;
-        text-align: center;
+        text-align: left;
     }
 
     /* Botões um embaixo do outro */
     .hero-buttons {
         flex-direction: column;
-        gap: 15px;
-        margin-top: 30px;
+        gap: 10px;
+        margin-top: 25px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
     .hero-buttons a {
