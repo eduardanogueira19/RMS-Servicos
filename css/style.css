@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #f8fafcff;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -26,7 +26,7 @@ html, body {
 
 /* HEADER */
 .header {
-    background-color: #ffffff;
+    background-color: #f8fafcff;
     position: fixed;
     width: 100%;
     top: 0;
@@ -42,7 +42,7 @@ html, body {
 }
 
 .logo {
-    width: 65px;
+    width: 60px;
 }
 /*Menu*/
 nav{
@@ -98,7 +98,7 @@ nav{
 }
 
 .btn-primary:hover {
-    background: #fff ;
+    background: #f8fafcff ;
     color: #021f3f;
 }
 
@@ -118,7 +118,7 @@ nav{
     position: absolute;
     top: 100%;
     right: 0;
-    background: #fff ;
+    background: #f8fafcff;
     list-style: none;
     padding: 10px 0;
     min-width: 220px;
@@ -175,28 +175,27 @@ h2 {
     text-align: center;}
 
 h3 {
-    color: #ffffff;
+    color: #f8fafcff;
     font-size: 26px;
     margin-bottom: 20px;
     text-align: center;
 }
 
 h4 {
-    color: #ffffff;
+    color: #f8fafcff;
     font-size: 22px;
     margin-bottom: 20px;
     text-align: center;
 }
 
 h5 {
-    color: #ffffff;
+    color: #f8fafcff;
     font-size: 20px;
     margin-bottom: 20px;
     text-align: center;
 }
 p{
     font-size: 18px;
-    
     line-height: 1.6;
     margin-bottom: 15px;
     text-align: start;
@@ -207,7 +206,7 @@ p{
 /* FOOTER */
 .footer {
     background-color: #021f3fe8;
-    color: #fff;
+    color: #f8fafcff;
     text-align: center;
     padding: 20px;
 }
