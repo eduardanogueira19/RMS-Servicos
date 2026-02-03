@@ -103,6 +103,22 @@ nav{
     color: #021f3f;
 }
 
+#orcamento{
+            background-color:#021f3f; 
+            color:  #fff; 
+            border-radius: 50px;
+            padding: 14px 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+#orcamento:hover{
+            background-color: #ffd700;
+            color: #021f3f;
+        }
+
 .btn-primary:hover {
     background: #f8fafcff ;
     color: #021f3f;

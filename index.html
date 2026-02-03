@@ -48,17 +48,21 @@
 
         .subtitulo {
             color: #ffd700;
-            font-size: 17px;
+            font-size: 17.6px;
             font-weight: 400;
             margin-bottom: -4.5%; /* distância do h1 */
             margin-left: 5%;
             text-align: left;
         }
+        
 
         .banner-content h1 {
             font-family: 'Archivo', sans-serif;
             margin: 5%;
             text-align: left;
+            font-size: 64px;
+            font-weight: 900;
+
         }
 
         .banner-content h2{
@@ -70,6 +74,7 @@
             margin: 5%;
             margin-top: -4%;
             text-align: left;
+            font-size: 17px;
         }
 
         /* BOTÕES HERO */
@@ -88,6 +93,7 @@
         }
 
         .hero-buttons {
+
             display: flex;
             justify-content: left;
             gap: 20px;
@@ -334,7 +340,7 @@
             /* -------- BANNER / HERO -------- */
             .banner,
             .banner-content {
-                padding: 90px 0 80px;
+                padding: 95px 0 80px;
             }
 
             .hero-text {
@@ -378,12 +384,13 @@
             /* -------- STATS (NÚMEROS) -------- */
 
             .stats {
-                flex-direction: column; /* empilha */
+                flex-direction: column;
                 align-items: center;
-                gap: -100px;
+                gap: 0px;
             }
 
             .stat-box {
+                align-items: center;
                 width: 100%;
                 max-width: 280px;
             }
@@ -393,8 +400,9 @@
                 margin-bottom: 4px;
             }
             .stat-box p {
-                margin: 10px 15px 15px 0;
-                font-size: 1rem;
+                margin: 10px 15px 15px 10px;
+                font-size: 1.5rem;
+                font-weight: 500;
             }
 
             /* -------- DIFERENCIAIS -------- */
@@ -490,7 +498,7 @@
                         <ul class="submenu">
                             <li><a href="html/trabalheconosco.html">TRABALHE CONOSCO</a></li>
                         </ul>
-                    <li><a style="background-color:#021f3f; color:  #fff; border-radius: 50px;" href="https://wa.me/55139884431354" class="btn btn-primary" target="_blank">ORÇAMENTO</a></li>
+                    <li><a href="https://wa.me/5513988431354" id="orcamento" target="_blank">ORÇAMENTO</a></li>
                     </li>
                 </ul>
             </nav>
@@ -501,10 +509,9 @@
         <div class="banner-content">
             <div class="hero-text">
                 <div>
-                    <h2 class="subtitulo">EFICIÊNCIA - INOVAÇÃO - SEGURANÇA</h2>
-                    <h1 style="color: #ffffff;" >OFERECEMOS SOLUÇÕES EM ELÉTRICA, 
-                    AUTOMAÇÃO E INSTRUMENTAÇÃO.</h1>
-                    <p>Há 13 anos atuando com soluções completas, desde de projetos <br>elétricos e de automação até mão de obra especializada.</p>
+                    <h2 class="subtitulo">ELÉTRICA - AUTOMAÇÃO - INSTRUMENTAÇÃO </h2>
+                    <h1 style="color: #ffffff;" ><i>TRANSFORMAMOS DESAFIOS EM RESULTADOS</i></h1>
+                    <p>Há mais de 13 anos atuando com soluções completas, desde <br>de projetos elétricos e de automação até a disponibilização<br>de mão de obra especializada - com foco em eficiência, <br>inovação e segurança.</p>
                 </div>
             
                 <!--Botoes-->

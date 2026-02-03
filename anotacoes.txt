@@ -3,7 +3,9 @@ Fontes: Roboto
 Cores:
 #eb2019 
 #042b55
-#f8ef1e
+#021f3f
+#ffd700
+#f8fafcff
 
 
 .banner {
