@@ -29,12 +29,12 @@ html, body {
     background-color: #f8fafcff;
     position: fixed;
     width: 100%;
+    height: 12%;
     top: 0;
     z-index: 9999;
 }
 
 .header .container {
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -113,7 +113,7 @@ nav{
             text-decoration: none;
             transition: all 0.3s ease;
         }
-        
+
 #orcamento:hover{
             background-color: #ffd700;
             color: #021f3f;
