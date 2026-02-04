@@ -7,13 +7,5 @@ Cores:
 #ffd700
 #f8fafcff
 
-
-.banner {
-            height: 100vh;
-            background-image: url("imagens/banner.jpeg");
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+grid-template-columns: repeat(3, 1fr); /* Cria as 3 colunas da imagem */
+flex-direction: column; /* imagem em cima, texto embaixo */
