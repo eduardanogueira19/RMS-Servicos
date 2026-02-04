@@ -15,13 +15,50 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <style>
+        .servicos {
+  padding: 80px 20px;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.servicos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.servico {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.servico img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.servico h3 {
+  margin: 15px 0 10px;
+}
+
+.servico p {
+  padding: 0 15px 20px;
+  font-size: 15px;
+}
+    </style>
+
 </head>
 <body>
     <!-- HEADER -->
     <header class="header">
         <div class="container">
             <img 
-                src="../imagens/Logotipo.png" 
+                src="../imagens/logodiferente.png" 
                 alt="Logo da Empresa" 
                 class="logo"
             >
@@ -44,6 +81,45 @@
             </nav>
         </div>
     </header>
+    <section class="servicos">
+        <h2>Nossos Serviços</h2>
+        <p>Soluções elétricas e técnicas com segurança, qualidade e compromisso.</p>
+
+        <div class="servicos-grid">
+
+            <div class="servico">
+                <img src="https://images.unsplash.com/photo-1581091870627-3f8f5f8c1c8b" alt="Manutenção elétrica">
+                <h3>Manutenção Elétrica</h3>
+                <p>Manutenção preventiva e corretiva garantindo segurança e desempenho.</p>
+            </div>
+
+            <div class="servico">
+                <img src="https://images.unsplash.com/photo-1581092334481-8f9b5b8f2a3e" alt="Instalações elétricas">
+                <h3>Instalações Elétricas</h3>
+                <p>Instalações comerciais e industriais conforme normas técnicas.</p>
+            </div>
+
+            <div class="servico">
+                <img src="https://images.unsplash.com/photo-1597764699516-06b7e58c3f47" alt="Manutenção industrial">
+                <h3>Manutenção Industrial</h3>
+                <p>Serviços especializados para ambientes industriais.</p>
+            </div>
+
+            <div class="servico">
+                <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7" alt="Automação elétrica">
+                <h3>Automação Elétrica</h3>
+                <p>Soluções automatizadas para maior eficiência operacional.</p>
+            </div>
+
+        </div>
+
+        <div class="cta-servicos">
+            <h3>Precisa de um serviço elétrico confiável?</h3>
+            <a href="https://wa.me/55SEUNUMERO" class="btn">Solicitar Orçamento</a>
+        </div>
+
+    </section>
+
 
 
 
