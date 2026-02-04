@@ -24,28 +24,31 @@ html, body {
 
 /* HEADER */
 .header {
-    background-color: #f8fafcff;
-    position: fixed;
-    width: 100%;
-    height: 12%;
-    top: 0;
-    z-index: 9999;
-    display: flex;
-    align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px; 
+  background-color: #f8fafcff;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: -40px;
 }
-
 .header .container {
-    width: 90%;
-    margin: 0 auto;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 16px 0;
+    justify-content: center; 
+   
+    width: 90%;
+    max-width: 1200px;
 }
 
 .logo {
-    width: 15%;
-    align-items: center;
+    margin-left: 40px;
+    width: 120px;
+    height: auto;
 }
 
 .logo:hover{
