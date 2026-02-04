@@ -1,6 +1,4 @@
 /*CONFIGURAÇÃO GERAL (NAVEGADOR)*/
-
-
 * {
     margin: 0;
     padding: 0;
@@ -48,15 +46,15 @@ html, body {
 .logo:hover{
     transform: scale(1.6);
     transition: all 1s ease;
-
 }
+
 /*Menu*/
 nav{
     width: 100%;
     display: flex;
     justify-content: right;
-
 }
+
 .menu {
     list-style: none;
     display: flex;
@@ -82,7 +80,6 @@ nav{
   cursor: pointer;
 }
 
-
 .menu a:hover {
     color: #eb2019;
 
@@ -104,27 +101,26 @@ nav{
 }
 
 #orcamento{
-            background-color:#021f3f; 
-            color:  #fff; 
-            border-radius: 50px;
-            padding: 14px 30px;
-            font-size: 1rem;
-            font-weight: bold;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
+    background-color:#021f3f; 
+    color:  #fff; 
+    border-radius: 50px;
+    padding: 14px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
 
 #orcamento:hover{
-            background-color: #ffd700;
-            color: #021f3f;
-        }
+    background-color: #ffd700;
+    color: #021f3f;
+}
 
 .btn-primary:hover {
     background: #f8fafcff ;
     color: #021f3f;
 }
 
-/*Submenu*/
 /* SUBMENU */
 .menu li {
     position: relative;
@@ -175,19 +171,14 @@ section {
     padding: 40px 0;
 }
 
-
-/*Fontes*/
-
-
-
 /*Titulos e paragrafos*/
 h1{
     color: #042b55;
     font-size: 35px;
     margin-top: 25px;
-    
-    text-align: left;
+    text-align: center;
     font-family: 'Roboto', sans-serif;
+    margin-left: 1%;
 }
 
 h2 {
@@ -218,9 +209,11 @@ h5 {
 }
 p{
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.9;
     margin-bottom: 15px;
-    text-align: start;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: justify;
     
     
 }

@@ -77,7 +77,50 @@
         font-size: 14px;
     }
 
+    /*Titulos e paragrafos*/
+    h1{
+        font-size: 30px;
+    }
 
+    h2 {
+        color: #042b55;
+        font-size: 28px;
+        margin-bottom: 25px;
+        text-align: center;}
+
+    h3 {
+        color: #f8fafcff;
+        font-size: 26px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    h4 {
+        color: #f8fafcff;
+        font-size: 22px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    h5 {
+        color: #f8fafcff;
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    p{
+        font-size: 16px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+
+    #orcamento{
+        border-radius: 40px;
+        padding: 10px 10px;
+        font-size: 0.9rem;
+    }
 
     /* -------- FOOTER -------- */
 
