@@ -422,106 +422,103 @@
             overflow: hidden;
         }
 
-.carousel {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* ocupa a tela toda */
-}
+        .carousel {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* ocupa a tela toda */
+        }
 
-.carousel-track1 {
-    display: flex;
-    height: 100%;
-    transition: transform 0.5s ease;
-}
+        .carousel-track1 {
+            display: flex;
+            height: 100%;
+            transition: transform 0.5s ease;
+        }
 
-.carousel-track1 img {
-    width: 100vw;
-    height: 100%;
-    object-fit: cover;
-    flex-shrink: 0;
-}
+        .carousel-track1 img {
+            width: 100vw;
+            height: 100%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
 
-/* Texto sobre a imagem */
-.carousel-content {
-    position: absolute;
-    top: 50%;
-    right: 8%;
-    transform: translateY(-50%);
-    color: #fff;
-    text-align: right;
-    max-width: 450px;
-}
+        /* Texto sobre a imagem */
+        .carousel-content {
+            position: absolute;
+            top: 50%;
+            right: 8%;
+            transform: translateY(-50%);
+            color: #fff;
+            text-align: right;
+            max-width: 450px;
+        }
 
-.carousel-content h2 {
+        .carousel-content h2 {
    
-    width: 900px;
-    font-weight: 1000;
-    margin-bottom: 20px;
-    margin-left: -490px;
-    text-transform: uppercase;
-    color: #f8fafcff;
-    font-family: 'Roboto', sans-serif;
-    text-align: right;
-    font-size: clamp(1.6rem, 3vw, 3.8rem);
-    line-height: 1.2;
-}
+            width: 900px;
+            font-weight: 1000;
+            margin-bottom: 25px;
+            margin-left: -490px;
+            text-transform: uppercase;
+            color: #f8fafcff;
+            font-family: 'Roboto', sans-serif;
+            text-align: right;
+            font-size: clamp(1.6rem, 3vw, 3.8rem);
+            line-height: 1.2;
+        }
 
-.btn-orcamento {
-    display: inline-block;
-    padding: 14px 28px;
-    background-color: #ff9800;
-    color: #000;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: 0.3s;
-}
+        .btn-orcamento {
+            display: inline-block;
+            padding: 14px 28px;
+            background-color: #ff9800;
+            color: #000;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
 
-.btn-orcamento:hover {
-    background-color: #ffa726;
-}
+        .btn-orcamento:hover {
+            background-color: #ffa726;
+        }
 
-/* Setas */
-.arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0,0,0,0.5);
-    color: #fff;
-    border: none;
-    font-size: 40px;
-    padding: 10px 18px;
-    cursor: pointer;
-    z-index: 10;
-}
+        /* Setas */
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0,0,0,0.5);
+            color: #fff;
+            border: none;
+            font-size: 40px;
+            padding: 10px 18px;
+            cursor: pointer;
+            z-index: 10;
+        }
 
-.arrow.left {
-    left: 20px;
-}
+        .arrow.left {
+            left: 20px;
+        }
 
-.arrow.right {
-    right: 20px;
-}
+        .arrow.right {
+            right: 20px;
+        }
 
-#orcamento2{
-    background-color:#ffd700; 
-    color:  #021f3f; 
-    border-radius: 50px;
-    padding: 15px 30px;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    margin-right: 15px;
+        #orcamento2{
+            background-color:#ffd700; 
+            color:  #021f3f; 
+            border-radius: 50px;
+            padding: 20px 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin-right: 15px;
     
-}
+        }
 
-#orcamento2:hover {
-    background-color: #f8fafcff;
-}
-
-
-
+        #orcamento2:hover {
+            background-color: #f8fafcff;
+        }
 
         @media (max-width: 768px){
             /* -------- BANNER / HERO -------- */
@@ -840,12 +837,12 @@
     <section style="margin-top: 0px;" id="carrossel">
     <div class="carousel">
         <div class="carousel-track1">
-            <img src="/imagens/carrosel-home/1.png" alt="">
-            <img src="/imagens/carrosel-home/2.png" alt="">
-            <img src="/imagens/carrosel-home/3.png" alt="">
-            <img src="/imagens/carrosel-home/4.png" alt="">
-            <img src="/imagens/carrosel-home/5.png" alt="">
-            <img src="/imagens/carrosel-home/6.png" alt="">
+            <img src="imagens/carrosel-home/1.png" alt="">
+            <img src="imagens/carrosel-home/2.png" alt="">
+            <img src="imagens/carrosel-home/3.png" alt="">
+            <img src="imagens/carrosel-home/4.png" alt="">
+            <img src="imagens/carrosel-home/5.png" alt="">
+            <img src="imagens/carrosel-home/6.png" alt="">
         </div>
 
         <!-- Texto sobre a imagem -->
@@ -984,29 +981,29 @@
             <h2 style="text-align: center;">Empresas que confiam na RMS</h2>
             <div class="carousel">
                 <div class="carousel-track">
-                    <img src="/clientes/unigel.svg" alt="UNIGEL">
-                    <img src="/clientes/isis.svg" alt="ISIS">
-                    <img src="/clientes/fuller.svg" alt="H.B. Fuller">
-                    <img src="/clientes/ldc.svg" alt="LDC. Louis Dreyfus Company">
-                    <img src="/clientes/cesari.svg" alt="CESARI">
-                    <img src="/clientes/teg.svg" alt="TEG">
-                    <img src="/clientes/teag.svg" alt="TEAG">
-                    <img src="/clientes/tes.svg" alt="TES">
-                    <img src="/clientes/nita.svg" alt="nita">
-                    <img src="/clientes/cdhu.svg" alt="CDHU">
-                    <img src="/clientes/hidromar.svg" alt="HIDROMAR">
+                    <img src="clientes/unigel.svg" alt="UNIGEL">
+                    <img src="clientes/isis.svg" alt="ISIS">
+                    <img src="clientes/fuller.svg" alt="H.B. Fuller">
+                    <img src="clientes/ldc.svg" alt="LDC. Louis Dreyfus Company">
+                    <img src="clientes/cesari.svg" alt="CESARI">
+                    <img src="clientes/teg.svg" alt="TEG">
+                    <img src="clientes/teag.svg" alt="TEAG">
+                    <img src="clientes/tes.svg" alt="TES">
+                    <img src="clientes/nita.svg" alt="nita">
+                    <img src="clientes/cdhu.svg" alt="CDHU">
+                    <img src="clientes/hidromar.svg" alt="HIDROMAR">
                     <!-- DUPLICA AS LOGOS -->
-                    <img src="/clientes/unigel.svg" alt="UNIGEL">
-                    <img src="/clientes/isis.svg" alt="ISIS">
-                    <img src="/clientes/fuller.svg" alt="H.B. Fuller">
-                    <img src="/clientes/ldc.svg" alt="LDC. Louis Dreyfus Company">
-                    <img src="/clientes/cesari.svg" alt="CESARI">
-                    <img src="/clientes/teg.svg" alt="TEG">
-                    <img src="/clientes/teag.svg" alt="TEAG">
-                    <img src="/clientes/tes.svg" alt="TES">
-                    <img src="/clientes/nita.svg" alt="nita">
-                    <img src="/clientes/cdhu.svg" alt="CDHU">
-                    <img src="/clientes/hidromar.svg" alt="HIDROMAR">
+                    <img src="clientes/unigel.svg" alt="UNIGEL">
+                    <img src="clientes/isis.svg" alt="ISIS">
+                    <img src="clientes/fuller.svg" alt="H.B. Fuller">
+                    <img src="clientes/ldc.svg" alt="LDC. Louis Dreyfus Company">
+                    <img src="clientes/cesari.svg" alt="CESARI">
+                    <img src="clientes/teg.svg" alt="TEG">
+                    <img src="clientes/teag.svg" alt="TEAG">
+                    <img src="clientes/tes.svg" alt="TES">
+                    <img src="clientes/nita.svg" alt="nita">
+                    <img src="clientes/cdhu.svg" alt="CDHU">
+                    <img src="clientes/hidromar.svg" alt="HIDROMAR">
                 </div>
             </div>
         </div>
