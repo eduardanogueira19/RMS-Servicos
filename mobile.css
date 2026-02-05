@@ -1,0 +1,151 @@
+
+/* ===============================
+   RESPONSIVO - CELULAR
+   Telas até 768px
+================================ */
+@media (max-width: 768px) {
+
+    /* -------- GERAL -------- */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-size: 16px; 
+    }
+
+    section {
+        padding: 60px 0; /* menos espaço vertical */
+    }
+
+    /* -------- HEADER -------- */
+
+
+
+    .header .container {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .header {
+        height: 70px;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 30px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-left: auto;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    
+        
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: #f8fafcff;
+        padding: 20px 0;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .logo{
+        margin-left: 0;
+        width: 100px;
+    }
+
+
+    .logo:hover{
+        transform: scale(1.3);
+        transition: all 1s ease;
+    }
+
+    nav {
+        display: block;
+    }
+    
+
+    .menu a {
+        padding: 5px 0;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    /*Titulos e paragrafos*/
+    h1{
+        font-size: 30px;
+    }
+
+    h2 {
+        color: #042b55;
+        font-size: 28px;
+        margin-bottom: 25px;
+        text-align: center;}
+
+    h3 {
+        color: #f8fafcff;
+        font-size: 26px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    h4 {
+        color: #f8fafcff;
+        font-size: 22px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    h5 {
+        color: #f8fafcff;
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    p{
+        font-size: 16px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+
+    #orcamento{
+        border-radius: 40px;
+        padding: 10px 10px;
+        font-size: 0.9rem;
+    }
+
+    /* -------- FOOTER -------- */
+
+    .contato-principal {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .rodape2 {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 5px;
+    }
+}
