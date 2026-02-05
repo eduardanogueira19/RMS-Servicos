@@ -24,7 +24,7 @@
 
         .servicos-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(3, minmax(280px, 1fr));
             gap: 30px;
             margin-top: 40px;
         }
@@ -34,6 +34,11 @@
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .servico:hover{
+            transform: scale(1.1);
+            transition: all 1s ease;
         }
 
         .servico img {
@@ -50,6 +55,12 @@
         .servico p {
             padding: 0 15px 20px;
             font-size: 15px;
+            
+        }
+        .servico a{
+            text-decoration: none;
+            color: black;
+            text-align: center;
             
         }
 
@@ -96,52 +107,53 @@
 
         <div class="servicos-grid">
 
-            <div class="servico">
+            <div class="servico"><a href="https://wa.me/5513988431354" target="_blank">
                 <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7" alt="Manutenção elétrica">
                 <h3>Projetos Elétricos</h3>
                 <p>Elaboração de projetos completos e executáveis — do estudo ao detalhamento. </p>
+            </a>
             </div>
 
-            <div class="servico">
+            <div class="servico"><a href="https://wa.me/5513988431354" target="_blank">
                 <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7" alt="Instalações elétricas">
                 <h3>Luminotécnicos</h3>
-                <p>Projetos de Iluminação e exercio de forma eficiente e bem dimensionada.</p>
+                <p>Projetos de Iluminação e exercio de forma eficiente e bem dimensionada.</p></a>
             </div>
 
-            <div class="servico">
+            <div class="servico"><a href="https://wa.me/5513988431354" target="_blank">
                 <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7" alt="Manutenção industrial">
                 <h3>Automação e Instrumentação</h3>
-                <p>Integração e controle com confiabilidade, elevando produtividade e segurança operacional. </p>
+                <p>Integração e controle com confiabilidade, elevando produtividade e segurança operacional. </p></a>
             </div>
 
-            <div class="servico">
+            <div class="servico"><a href="https://wa.me/5513988431354" target="_blank">
                 <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7" alt="Automação elétrica">
                 <h3>Aterramento e SPDA</h3>
-                <p>Proteção e conformidade para reduzir riscos e falhas. </p>
+                <p>Proteção e conformidade para reduzir riscos e falhas. </p></a>
             </div>
 
-            <div class="servico">
+            <div class="servico"><a href="https://wa.me/5513988431354" target="_blank">
                 <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7" alt="Automação elétrica">
                 <h3>Painéis Elétricos</h3>
-                <p>Montagem e adequação de painéis. </p>
+                <p>Montagem e adequação de painéis. </p></a>
             </div>
 
-            <div class="servico">
+            <div class="servico"><a href="https://wa.me/5513988431354" target="_blank">
                 <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7" alt="Automação elétrica">
                 <h3>Centro de Controle de Motores (CCM)</h3>
-                <p>Comando e proteção.</p>
+                <p>Comando e proteção.</p></a>
             </div>
 
-            <div class="servico">
+            <div class="servico"><a href="https://wa.me/5513988431354" target="_blank">
                 <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7" alt="Automação elétrica">
                 <h3>Postes e Postes de Entrada</h3>
-                <p>Implantação de postes e entrada de energia com segurança e conformidade. </p>
+                <p>Implantação de postes e entrada de energia com segurança e conformidade. </p></a>
             </div>
 
-            <div class="servico">
+            <div class="servico"><a href="https://wa.me/5513988431354" target="_blank">
                 <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7" alt="Automação elétrica">
                 <h3>NR10, NR12, NR13 e AVCB</h3>
-                <p>Adequações e laudos para atendimento normativo e suporte à regularização.</p>
+                <p>Adequações e laudos para atendimento normativo e suporte à regularização.</p></a>
             </div>
         </div>
 
