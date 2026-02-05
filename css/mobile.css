@@ -22,17 +22,56 @@
 
     /* -------- HEADER -------- */
 
+
+
     .header .container {
         display: flex;
         align-items: center;
         flex-direction: row;
         justify-content: space-between;
+        position: relative;
     }
 
     .header {
-        position: fixed;
         height: 70px;
     }
+
+    .menu-toggle {
+        display: block;
+        font-size: 30px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-left: auto;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    
+        
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: #f8fafcff;
+        padding: 20px 0;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .logo{
+        margin-left: 0;
+        width: 100px;
+    }
+
 
     .logo:hover{
         transform: scale(1.3);
@@ -43,38 +82,6 @@
         display: block;
     }
     
-    .menu-toggle {
-        display: block;
-        font-size: 26px;
-        background: none;
-        border: none;
-        cursor: pointer;
-        margin-left: 200px;
-        
-    }
-
-    /* esconde o menu */
-    .menu {
-        display: none;
-        flex-direction: column; 
-        position: absolute;
-        top: 100%; 
-        right: 0;
-        width: 100%;
-        background: #f8fafcff;
-        padding: 20px;
-        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-    }
-
-    /* quando estiver ativo */
-    .menu.active {
-        display: flex;
-    }
-
-    /* mostra o botão */
-    .menu-toggle {
-        display: block;
-    }
 
     .menu a {
         padding: 5px 0;
