@@ -22,7 +22,7 @@
         /*BANNER*/
         .banner {
             height: 100vh;
-            
+            background-color: #021f3f;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -325,23 +325,35 @@
         }
 
         /*CLIENTES*/
+
+        #clientes {
+            overflow-x: hidden;
+        }
+
+        
         .carousel {
+            height: 100px;
             width: 100%;
-            overflow: visible;
-            background:#f8fafcff;
-            padding: 0px 0;
+            overflow-x: hidden;
+          
         }
 
         .carousel-track {
             display: flex;
             width: max-content;
-            animation: scroll 30s linear infinite;
+            animation: scroll 25s linear infinite;
+            gap: 60px;
+        }
+
+        .carousel h2{
+            margin-top: 30px;
         }
 
         .carousel-track img {
-            height: 150px;
-            margin: 0 40px;
-            object-fit: contain;
+            height: 90px;
+            margin-top: 50px;
+            object-fit: cover;
+            margin-bottom: 0;
         }
 
         @keyframes scroll {
@@ -380,7 +392,6 @@
             width: 100%;
             overflow: hidden;
         }
-
         .carousel {
             position: relative;
             width: 100vw;
@@ -388,7 +399,6 @@
             height: clamp(350px, 50vh, 650px);
 
         }
-
         .carousel-track1 {
             display: flex;
             height: 100%;
@@ -603,26 +613,6 @@
             }
 
 
-            /* -------- DIFERENCIAIS -------- */
-
-            .diferenciais-container {
-                flex-direction: column; /* imagem em cima, texto embaixo */
-                padding: 0 20px;
-            }
-
-            .diferenciais-img,
-            .diferenciais {
-                width: 100%;
-            }
-
-            .diferenciais h2 {
-                text-align: center;
-            }
-
-            .diferenciais .card {
-                width: 100%;
-            }
-
             /* -------- SERVIÇOS -------- */
 
             .servicos-container {
@@ -647,7 +637,7 @@
             /* -------- CARROSSEL CLIENTES -------- */
 
             .carousel-track img {
-                height: 90px; /* logos menores */
+                height: 80px; /* logos menores */
                 margin: 0 20px;
             }
 
@@ -950,7 +940,7 @@
             </div>
         </div>
     </section>
-    <section class="cta-final">
+    <section class="cta-final" style="margin-bottom: 25px;">
         <h2>Pronto para tirar seu projeto do papel?</h2>
         <p>Entre em contato com a RMS <br> e fale com um especialista.</p>
 
@@ -960,50 +950,51 @@
     </section>
 
     <!-- CLIENTES -->
-     <section id="clientes" class="contato">
-        <div class="container">
-            <h2 style="text-align: center;">Empresas que confiam na RMS</h2>
-            <div class="carousel">
-                <div class="carousel-track">
-                    <img src="clientes/unigel.svg" alt="UNIGEL">
-                    <img src="clientes/isis.svg" alt="ISIS">
-                    <img src="clientes/fuller.svg" alt="H.B. Fuller">
-                    <img src="clientes/ldc.svg" alt="LDC. Louis Dreyfus Company">
-                    <img src="clientes/cesari.svg" alt="CESARI">
-                    <img src="clientes/teg.svg" alt="TEG">
-                    <img src="clientes/teag.svg" alt="TEAG">
-                    <img src="clientes/tes.svg" alt="TES">
-                    <img src="clientes/nita.svg" alt="nita">
-                    <img src="clientes/cdhu.svg" alt="CDHU">
-                    <img src="clientes/hidromar.svg" alt="HIDROMAR">
+     <section style="margin-bottom: 0px; padding: 0; margin-top: 0;" id="clientes">
+        <div>
+            <div class="carousel" style="margin-bottom: 0px; padding: 0; margin-top: 0;">
+                <h2 style="text-align: center;">Empresas que confiam na RMS</h2>
+                <div class="carousel-track" style="margin-bottom: 0px; padding: 0; margin-top: 0;">
+                    <img src="clientes/Logos-clientes/unigel.png" alt="UNIGEL">
+                    <img src="clientes/Logos-clientes/isis.jpg" alt="ISIS">
+                    <img src="clientes/Logos-clientes/fuller.png" alt="H.B. Fuller">
+                    <img src="clientes/Logos-clientes/ldc.png" alt="LDC. Louis Dreyfus Company">
+                    <img src="clientes/Logos-clientes/cesari.png" alt="CESARI">
+                    <img src="clientes/Logos-clientes/teg.png" alt="TEG">
+                    <img src="clientes/Logos-clientes/teag.png" alt="TEAG">
+                    <img src="clientes/Logos-clientes/tes.png" alt="TES">
+                    <img src="clientes/Logos-clientes/nita.jpg" alt="nita">
+                    <img src="clientes/Logos-clientes/cdhu.png" alt="CDHU">
+                    <img src="clientes/Logos-clientes/hidromar.png" alt="HIDROMAR">
+                    <img src="clientes/Logos-clientes/citrosuco.png" alt="Citrosuco">
+                    <img src="clientes/Logos-clientes/ctm.jpg" alt="Ctm">
+                    <img src="clientes/Logos-clientes/ideal.png" alt="Ideal">
+                    <img src="clientes/Logos-clientes/terminal-xxx.jpg" alt="Terminal-xxx">
+                    <img src="clientes/Logos-clientes/yara.png" alt="Yara">
                     <!-- DUPLICA AS LOGOS -->
-                    <img src="clientes/unigel.svg" alt="UNIGEL">
-                    <img src="clientes/isis.svg" alt="ISIS">
-                    <img src="clientes/fuller.svg" alt="H.B. Fuller">
-                    <img src="clientes/ldc.svg" alt="LDC. Louis Dreyfus Company">
-                    <img src="clientes/cesari.svg" alt="CESARI">
-                    <img src="clientes/teg.svg" alt="TEG">
-                    <img src="clientes/teag.svg" alt="TEAG">
-                    <img src="clientes/tes.svg" alt="TES">
-                    <img src="clientes/nita.svg" alt="nita">
-                    <img src="clientes/cdhu.svg" alt="CDHU">
-                    <img src="clientes/hidromar.svg" alt="HIDROMAR">
+                    <img src="clientes/Logos-clientes/unigel.png" alt="UNIGEL">
+                    <img src="clientes/Logos-clientes/isis.jpg" alt="ISIS">
+                    <img src="clientes/Logos-clientes/fuller.png" alt="H.B. Fuller">
+                    <img src="clientes/Logos-clientes/ldc.png" alt="LDC. Louis Dreyfus Company">
+                    <img src="clientes/Logos-clientes/cesari.png" alt="CESARI">
+                    <img src="clientes/Logos-clientes/teg.png" alt="TEG">
+                    <img src="clientes/Logos-clientes/teag.png" alt="TEAG">
+                    <img src="clientes/Logos-clientes/tes.png" alt="TES">
+                    <img src="clientes/Logos-clientes/nita.jpg" alt="nita">
+                    <img src="clientes/Logos-clientes/cdhu.png" alt="CDHU">
+                    <img src="clientes/Logos-clientes/hidromar.png" alt="HIDROMAR">
+                    <img src="clientes/Logos-clientes/citrosuco.png" alt="Citrosuco">
+                    <img src="clientes/Logos-clientes/ctm.jpg" alt="Ctm">
+                    <img src="clientes/Logos-clientes/ideal.png" alt="Ideal">
+                    <img src="clientes/Logos-clientes/terminal-xxx.jpg" alt="Terminal-xxx">
+                    <img src="clientes/Logos-clientes/yara.png" alt="Yara">
                 </div>
             </div>
         </div>
     </section>
 
-    <!--<section class="area-atuacao">
-        <h2>Área de Atuação</h2>
-
-        <p>
-            A RMS Serviços atua na <strong>Baixada Santista</strong>, atendendo as cidades de <strong>Cubatão, Santos, São Vicente, Praia Grande e Guarujá</strong>, além da <strong>Região Metropolitana de São Paulo</strong>.
-        </p>
-    </section>-->
-
-
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer class="footer" style="margin-top: 0;">
         <div class="contato-principal">
             <div class="local">
                 <p><strong>Endereço:</strong><br>Avenida Nove de Abril, 3710,<br>Vila Nova - Cubatão/SP</p>

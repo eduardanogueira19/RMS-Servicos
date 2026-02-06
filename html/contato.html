@@ -18,14 +18,14 @@
 
     <style>
         main{
-            margin-top: 50px;
-            margin-bottom: 50px;
+            margin-top: 90px;
+            margin-bottom: 0px;
         }
         .contato-profissional {
             display: flex;
             gap: 50px;
             margin: 80px 10%;
-            align-items: baseline;
+            align-items: center;
         }
 
         /* BLOCO INFO */
@@ -33,22 +33,23 @@
             flex: 1;
         }
 
-        .contato-info h2 {
-            margin-bottom: 30px;
+        h2 {
             color: #021f3f;
-            font-size: 32px;
+            font-size: 30px;
             text-transform: uppercase;
+            margin-bottom: 0;
         }
 
         /* GRID DE CARDS */
         .info-grid {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
-            gap: 25px;
+            gap: 20px;
         }
 
         .info-card {
             background: #021f3f;
+            height: 450px;
             padding: 20px;
             border-radius: 12px;
             color: #f8fafc;
@@ -57,6 +58,7 @@
 
         .info-card h4 {
             color: #f8fafcff;
+            margin-top: 25px;
             margin-bottom: 10px;
             font-size: 18px;
         }
@@ -73,18 +75,11 @@
             flex: 1;
         }
 
-        .contato-mapa h3 {
-            margin-bottom: 20px;
-            color: #021f3f;
-            font-size: 24px;
-        }
-
         .mapa {
-            margin-top: 70px;
             border: 3px solid #021f3f;
             border-radius: 15px;
             overflow: hidden;
-            height: 500px;
+            height: 450px;
             box-shadow: 0 15px 30px rgba(0,0,0,0.15);
         }
 
@@ -118,13 +113,6 @@
         strong{
             color:#f8fafcff ;
         }
-        
-        h2 {
-            margin-top: 40px;
-            text-transform: uppercase;
-            
-        }
-
 
         @media(max-width: 768px){
             .contato-profissional {
@@ -194,46 +182,37 @@
         </div>
     </header>
     <main>
-        <section class="contato-profissional">
+        <h2>Informações de Contato</h2>
+        <section style="padding: 0; margin-top:35px;" class="contato-profissional">
+            <div class="contato-info">
 
-  <div class="contato-info">
-    <h2>Informações de Contato</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h4>Endereço</h4>
+                        <p>Avenida Nove de Abril, 3710 Vila Nova – Cubatão/SP</p>
 
-    <div class="info-grid">
-      <div class="info-card">
-        <h4>Endereço</h4>
-        <p>Avenida Nove de Abril, 3710 Vila Nova – Cubatão/SP</p>
-      </div>
+                        <h4>Telefones</h4>
+                        <p>(13) 99719-2496<br>(13) 99615-1592</p>
 
-      <div class="info-card">
-        <h4>Telefones</h4>
-        <p>(13) 99719-2496<br>(13) 99615-1592</p>
-      </div>
+                        <h4>E-mail</h4>
+                        <p>roberto@rmsservicos.com.br<br>selma@rmsservicos.com.br</p>
 
-      <div class="info-card">
-        <h4>E-mail</h4>
-        <p>roberto@rmsservicos.com.br<br>selma@rmsservicos.com.br</p>
-      </div>
+                        <h4>Horário</h4>
+                        <p>Seg – Sex / 7h às 19h</p>
+                    </div>
+                </div>
+            </div>
 
-      <div class="info-card">
-        <h4>Horário</h4>
-        <p>Seg – Sex / 7h às 19h</p>
-      </div>
-    </div>
-  </div>
+            <div class="contato-mapa">
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.734615901559!2d-46.4223557!3d-23.8990275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1a0cf4e2ff9f%3A0x773d7bb29900e112!2sAv.%209%20de%20Abril%2C%203710%20-%20Centro%2C%20Cubat%C3%A3o%20-%20SP%2C%2011510-003!5e0!3m2!1spt-BR!2sbr!4v1770386058999!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
 
-  <div class="contato-mapa">
-    <h2>Nossa Localização</h2>
-    <div class="mapa">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.734615901559!2d-46.4223557!3d-23.8990275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1a0cf4e2ff9f%3A0x773d7bb29900e112!2sAv.%209%20de%20Abril%2C%203710%20-%20Centro%2C%20Cubat%C3%A3o%20-%20SP%2C%2011510-003!5e0!3m2!1spt-BR!2sbr!4v1770386058999!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </div>
-
-</section>
+        </section>
 
         <a href="trabalheconosco.html" class="botao-lateral">TRABALHE CONOSCO</a>
        
-        
             
     </main>
 
