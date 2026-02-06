@@ -10,10 +10,11 @@ const observer = new IntersectionObserver((entries, observer) => {
     if (entry.isIntersecting) {
       const counter = entry.target;
 
-      const target = Number(counter.getAttribute('data-target'));
+      const target = Number(counter.dataset.target);
+      const speed = Number(counter.dataset.speed) || 20; // padrão
       let current = 0;
+
       const increment = Math.ceil(target / 200);
-      
 
       const updateCount = () => {
         if (current < target) {
@@ -21,19 +22,19 @@ const observer = new IntersectionObserver((entries, observer) => {
           if (current > target) current = target;
 
           counter.innerText = new Intl.NumberFormat('pt-BR').format(current);
-          setTimeout(updateCount, 5);
+          setTimeout(updateCount, speed);
         } else {
           counter.innerText = new Intl.NumberFormat('pt-BR').format(target);
         }
       };
 
       updateCount();
-      observer.unobserve(counter); // anima só uma vez
+      observer.unobserve(counter);
     }
   });
 }, options);
 
 counters.forEach(counter => {
-  counter.innerText = '0'; // garante que começa zerado
+  counter.innerText = '0';
   observer.observe(counter);
 });

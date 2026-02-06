@@ -173,46 +173,7 @@
             line-height: 2;
         }
 
-        /* SECTION DIFERENCIAIS */
-        .diferenciais-section {
-            padding: 80px 0;
-        }
-
-        .diferenciais-container {
-            max-width: 1100px;
-            margin: auto;
-            display: flex;
-            align-items: center;
-            gap: 40px;
-        }   
-
-        /* Lado esquerdo (imagem) */
-        .diferenciais-img {
-            width: 50%;
-            min-height: 300px;
-            background: #e0e0e0; /* só pra visualizar o espaço */
-            border-radius: 8px;
-        }
-
-        /* Lado direito (conteúdo) */
-        .diferenciais {
-            width: 50%;
-        }
-
-        .diferenciais h2 {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        /* Cards continuam funcionando */
-        .diferenciais .cards {
-            padding: 0;
-        }
-
-        .diferenciais .card {
-            margin-bottom: 15px;
-        }
-
+        
         /* SECTION SERVIÇOS */
         .servicos-home {
             padding: 80px 0;
@@ -268,6 +229,12 @@
             flex-direction: column;
             justify-content: center;
             height: 90px;
+        }
+
+        .stat-number::before {
+            content: "+";
+            margin-left: 4px;
+            font-weight: bold;
         }
 
         /* Texto das estatísticas */
@@ -835,17 +802,17 @@
      <!--Números-->
      <section style="margin-bottom: 0;" class="stats">
         <div class="stat-box">
-            <span class="stat-number" data-target="1000">0</span>
+            <span class="stat-number" data-target="1000" data-speed="1">0</span>
             <p>Obras Executadas</p>
         </div>
 
         <div class="stat-box">
-            <span class="stat-number" data-target="11">0</span>
+            <span class="stat-number" data-target="11" data-speed="100">0</span>
             <p>Terminais Marítimos</p>
         </div>
 
         <div class="stat-box">
-            <span class="stat-number" data-target="13">0</span>
+            <span class="stat-number" data-target="13" data-speed="100">0</span>
             <p>Anos de Atuação</p>
         </div>
         <!-- Adicione mais estatísticas como quiser -->
