@@ -69,6 +69,21 @@
             text-align: center;
         }
 
+        @media (max-width:768px){
+            .servicos-grid {
+            display: grid;
+            grid-template-columns: repeat(1, minmax(20px, 1fr));
+            gap: 10px;
+            margin-top: 40px;
+            }
+            .servico:hover{
+            transform: scale(1);
+            transition: all 1s ease;
+        }
+
+
+        }
+
         
     </style>
 

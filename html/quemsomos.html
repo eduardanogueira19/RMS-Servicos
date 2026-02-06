@@ -130,6 +130,57 @@
                 padding: 0;
             }
 
+            .servicos {
+            padding: 10% 40px;
+            background: #f8fafcff;
+            text-align: center;
+        }
+
+        .servicos-grid {
+            display: grid;
+            grid-template-columns: repeat(1, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 10px;
+        }
+
+        .servico {
+            background: #021f3f;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .servico:hover{
+            transform: scale(1.05);
+            transition: all 1s ease;
+        }
+
+        .servico img {
+            margin-top: 20px;
+            width: auto;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .servico h3 {
+            color: #f8fafcff;
+            margin: 15px 0 10px;
+            justify-content: center;
+        }
+
+        .servico p {
+            padding: 0 5px 5px;
+            font-size: 15px;
+            color: #f8fafcff;
+            text-align: center;
+            
+        }
+
+        #sub{
+            justify-content: center;
+            text-align: center;
+        }
+
         }
         
 
