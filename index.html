@@ -2,7 +2,6 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <!-- Meta Title -->
     <title>RMS Serviços | Elétrica e Automação na Baixada Santista – SP</title>
     <meta name="description" content="Há 13 anos oferecendo soluções em elétrica, automação e instrumentação industrial na Baixada Santista e SP. Projetos, execução e mão de obra especializada.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,16 +9,12 @@
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
-
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 
     <style>
-        /*BANNER*/
         .banner {
             height: 100vh;
             background-color: #021f3f;
@@ -29,7 +24,6 @@
             margin-top: 20px;
             z-index: 9999;
         }
-        /*teste*/
 
         .banner-content {
             height: 100vh;
@@ -42,7 +36,7 @@
             width: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: center; /* centraliza tudo verticalmente */
+            justify-content: center;
         }
 
         .banner-content > div {
@@ -54,7 +48,7 @@
             color: #ffd700;
             font-size: 17.6px;
             font-weight: 400;
-            margin-bottom: -4.5%; /* distância do h1 */
+            margin-bottom: -4.5%;
             margin-left: 5%;
             text-align: left;
         }
@@ -85,8 +79,6 @@
             text-align: left;
             font-size: 17px;
         }
-
-        /* BOTÕES HERO */
 
         .hero-text {
             max-width: 700px;
@@ -121,7 +113,6 @@
             text-transform: uppercase;
         }
 
-        /* Botão principal */
         .btn-primary {
             background: #ffd700;
             color: #021f3f;
@@ -132,7 +123,6 @@
             color: #021f3f;
         }
 
-        /* Botão secundário */
         .btn-outline {
             background-color: #021f3f00;
             border: 2px solid #f8fafcff;
@@ -173,8 +163,6 @@
             line-height: 2;
         }
 
-        
-        /* SECTION SERVIÇOS */
         .servicos-home {
             padding: 80px 0;
         }
@@ -187,7 +175,6 @@
             gap: 60px;
         }
 
-        /* Lado esquerdo */
         .servicos-content {
             width: 55%;
         }
@@ -196,21 +183,17 @@
             margin-bottom: 24px;
         }
 
-        /* Botão centralizado */
         .center {
             text-align: center;
         }
 
-        /* Lado direito (imagem) */
         .servicos-img {
             width: 45%;
             min-height: 320px;
-            background: #e0e0e0; /* placeholder */
+            background: #e0e0e0;
             border-radius: 12px;
         }
 
-
-        /*Números*/
         .stats {
             display: flex;
             gap: 2px;
@@ -237,9 +220,8 @@
             font-weight: bold;
         }
 
-        /* Texto das estatísticas */
         .stat-box p {
-            margin: 10px 15px 15px; /* remove herança do p global */
+            margin: 10px 15px 15px;
             font-size: 1rem;
             line-height: 1.4;
             color: #333;
@@ -249,7 +231,7 @@
         .stat-number {
             font-size: 3rem;
             font-weight: bold;
-            color: #042b55; /* cor que preferir */
+            color: #042b55;
             margin-bottom: 8px;
         }
 
@@ -260,11 +242,9 @@
             margin-right: 200px;
         }
 
-        /*Serviços*/
-
         .servicos-container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* Cria as 3 colunas da imagem */
+            grid-template-columns: repeat(3, 1fr);
             gap: 40px;
             padding: 50px;
         }
@@ -277,27 +257,24 @@
 
         .image-wrapper {
             position: relative;
-            width: 80px; /* Ajuste conforme seu PNG */
+            width: 80px;
             height: 80px;
             margin-right: 20px;
         }
 
-        /* Imagem Padrão */
         .img-base {
             position: absolute;
             width: 100%;
             transition: opacity 0.3s ease;
         }
 
-        /* Imagem que aparece no Hover */
         .img-hover {
             position: absolute;
             width: 100%;
-            opacity: 0; /* Começa invisível */
+            opacity: 0;
             transition: opacity 0.3s ease;
         }
 
-        /* Efeito de Troca ao passar o mouse */
         .servico-card:hover .img-base {
             opacity: 0;
         }
@@ -314,7 +291,7 @@
             display: flex;
             justify-content: space-between;
             width: 100%;
-            border-bottom: 1px solid #eee; /* Linha sutil opcional */
+            border-bottom: 1px solid #eee;
             padding-bottom: 10px;
         }
 
@@ -323,8 +300,6 @@
             font-size: 18px;
             text-align: left;
         }
-
-        /*CLIENTES*/
 
         #clientes {
             overflow-x: hidden;
@@ -365,7 +340,6 @@
             }
         }
 
-        /*CTA-FINAL*/
         .cta-final {
             background-color: #9e0e0e;
             width: 100%;
@@ -392,6 +366,7 @@
             width: 100%;
             overflow: hidden;
         }
+
         .carousel {
             position: relative;
             width: 100vw;
@@ -399,6 +374,7 @@
             height: clamp(350px, 50vh, 650px);
 
         }
+
         .carousel-track1 {
             display: flex;
             height: 100%;
@@ -415,7 +391,6 @@
             pointer-events: none;
         }
 
-        /* Texto sobre a imagem */
         .carousel-content {
             position: absolute;
             top: 50%;
@@ -456,7 +431,6 @@
             background-color: #ffa726;
         }
 
-        /* Setas */
         .arrow {
             position: absolute;
             top: 50%;
@@ -498,7 +472,6 @@
         }
 
         @media (max-width: 768px){
-            /* -------- BANNER / HERO -------- */
             .banner,
             .banner-content {
                 padding: 95px 0 60px;
@@ -513,9 +486,10 @@
                 height: 105vh;
                 background-image: url("imagens/banner-mobile.svg");
             }
+
             .hero-text {
                 margin-left: 0;
-                padding: 10 20px; /* respiro lateral */
+                padding: 10 20px;
                 text-align: left;
             }
 
@@ -545,7 +519,6 @@
                 text-align: left;
             }
 
-            /* Botões um embaixo do outro */
             .hero-buttons {
                 flex-direction: column;
                 gap: 10px;
@@ -562,8 +535,6 @@
             .btn-outline {
                 background-color: #021f3fd7;     
             }
-
-            /* -------- STATS (NÚMEROS) -------- */
 
             .stats {
                 flex-direction: column;
@@ -595,7 +566,6 @@
                 font-size: 22px;
             }
 
-            /*Serviços*/
             .servicos-container {
                 grid-template-columns: none;
                 gap: 5px;
@@ -603,16 +573,12 @@
             }
 
             .image-wrapper {
-                width: 50px; /* Ajuste conforme seu PNG */
+                width: 50px; 
             }
-
 
             .texto-wrapper {
-                border-bottom: 2px solid #eee; /* Linha sutil opcional */
+                border-bottom: 2px solid #eee; 
             }
-
-
-            /* -------- SERVIÇOS -------- */
 
             .servicos-container {
                 flex-direction: column;
@@ -633,10 +599,8 @@
                 width: 100%;
             }
 
-            /* -------- CARROSSEL CLIENTES -------- */
-
             .carousel-track img {
-                height: 40px; /* logos menores */
+                height: 40px; 
                 margin: 40px 0px;
                 margin-bottom: 60px;
             }
@@ -644,9 +608,6 @@
             .carousel-track h2 {
                 font-size: 15px;
             }
-
-
-            /* -------- CTA FINAL -------- */
 
             .cta-final p {
                 margin: 20px 0;
@@ -688,7 +649,6 @@
                 flex-shrink: 0;
             }
 
-            /* Texto sobre a imagem */
             .carousel-content {
                 position: absolute;
                 right: 15px;
@@ -710,7 +670,6 @@
                 line-height: 1.4;
             }
 
-            /* Setas */
             .arrow {
                 font-size: 10px;
                 padding: 7px 10px;
@@ -736,7 +695,6 @@
 
 </head>
 <body>
-    <!-- HEADER -->
     <header class="header">
         <div class="container">
             <a href="index.html"><img 
@@ -764,7 +722,7 @@
             </nav>
         </div>
     </header>
-    <!-- BANNER -->
+ 
      <section class="banner">
         <div class="banner-content">
             <div class="hero-text">
@@ -774,7 +732,6 @@
                     <p id="frase">Há mais de 13 anos atuando com soluções completas, desde de projetos elétricos e de automação até a disponibilização de mão de obra especializada - com foco em eficiência, inovação e segurança.</p>
                 </div>
             
-                <!--Botoes-->
                 <div class="hero-buttons">
                     <a href="html/contato.html" class="btn btn-primary">Solicitar Orçamento</a>
                     <a href="html/servicosobras.html" class="btn btn-outline">Conheça Nossos Serviços</a>
@@ -784,7 +741,6 @@
         </div>
     </section>
 
-     <!--Números-->
      <section style="margin-bottom: 0;" class="stats">
         <div class="stat-box">
             <span class="stat-number" data-target="1000" data-speed="1">0</span>
@@ -800,10 +756,8 @@
             <span class="stat-number" data-target="13" data-speed="100">0</span>
             <p>Anos de Atuação</p>
         </div>
-        <!-- Adicione mais estatísticas como quiser -->
     </section>  
 
-    <!--Carrossel-->
     <section style="padding-top: 0;" id="carrossel">
     <div class="carousel">
         <div class="carousel-track1">
@@ -815,7 +769,6 @@
             <img src="imagens/carrosel-home/6.png" alt="">
         </div>
 
-        <!-- Texto sobre a imagem -->
         <div class="carousel-content">
             <h2>
                 <i>CONFIANÇA QUE SE MEDE.</i><br>
@@ -824,7 +777,6 @@
             <a href="https://wa.me/5513988431354" id="orcamento2">SOLICITAR ORÇAMENTO</a>
         </div>
 
-        <!-- Setas -->
         <button class="arrow left">&#10094;</button>
         <button class="arrow right">&#10095;</button>
     </div>
@@ -935,7 +887,7 @@
             </div>
         </div>
     </section>
-    <section class="cta-final" style="margin-bottom: 25px;">
+    <section class="cta-final" style="margin-bottom: -15px;">
         <h2>Pronto para tirar seu projeto do papel?</h2>
         <p>Entre em contato com a RMS <br> e fale com um especialista.</p>
 
@@ -944,51 +896,49 @@
         </div>
     </section>
 
-    <!-- CLIENTES -->
-     <section style="margin-bottom: 0px; padding: 0; margin-top: 0;" id="clientes">
+     <section style="margin-bottom: -80px; padding: 0; margin-top: -80;" id="clientes">
         <div>
             <div class="carousel" style="margin-bottom: 0px; padding: 0; margin-top: 0;">
                 <h2 style="text-align: center;">Empresas que confiam na RMS</h2>
                 <div class="carousel-track" style="margin-bottom: 0px; padding: 0; margin-top: 0;">
-                    <img src="clientes/Logos-clientes/unigel.png" alt="UNIGEL">
-                    <img src="clientes/Logos-clientes/isis.svg" alt="ISIS">
-                    <img src="clientes/Logos-clientes/fuller.png" alt="H.B. Fuller">
-                    <img src="clientes/Logos-clientes/ldc.png" alt="LDC. Louis Dreyfus Company">
-                    <img src="clientes/Logos-clientes/cesari.png" alt="CESARI">
-                    <img src="clientes/Logos-clientes/teg.png" alt="TEG">
-                    <img src="clientes/Logos-clientes/teag.png" alt="TEAG">
-                    <img src="clientes/Logos-clientes/tes.png" alt="TES">
-                    <img src="clientes/Logos-clientes/nita.svg" alt="nita">
-                    <img src="clientes/Logos-clientes/cdhu.png" alt="CDHU">
-                    <img src="clientes/Logos-clientes/hidromar.png" alt="HIDROMAR">
-                    <img src="clientes/Logos-clientes/citrosuco.png" alt="Citrosuco">
-                    <img src="clientes/Logos-clientes/ctm.svg" alt="Ctm">
-                    <img src="clientes/Logos-clientes/ideal.png" alt="Ideal">
-                    <img src="clientes/Logos-clientes/terminal-xxx.jpg" alt="Terminal-xxx">
-                    <img src="clientes/Logos-clientes/yara.png" alt="Yara">
-                    <!-- DUPLICA AS LOGOS -->
-                    <img src="clientes/Logos-clientes/unigel.png" alt="UNIGEL">
-                    <img src="clientes/Logos-clientes/isis.svg" alt="ISIS">
-                    <img src="clientes/Logos-clientes/fuller.png" alt="H.B. Fuller">
-                    <img src="clientes/Logos-clientes/ldc.png" alt="LDC. Louis Dreyfus Company">
-                    <img src="clientes/Logos-clientes/cesari.png" alt="CESARI">
-                    <img src="clientes/Logos-clientes/teg.png" alt="TEG">
-                    <img src="clientes/Logos-clientes/teag.png" alt="TEAG">
-                    <img src="clientes/Logos-clientes/tes.png" alt="TES">
-                    <img src="clientes/Logos-clientes/nita.svg" alt="nita">
-                    <img src="clientes/Logos-clientes/cdhu.png" alt="CDHU">
-                    <img src="clientes/Logos-clientes/hidromar.png" alt="HIDROMAR">
-                    <img src="clientes/Logos-clientes/citrosuco.png" alt="Citrosuco">
-                    <img src="clientes/Logos-clientes/ctm.svg" alt="Ctm">
-                    <img src="clientes/Logos-clientes/ideal.png" alt="Ideal">
-                    <img src="clientes/Logos-clientes/terminal-xxx.jpg" alt="Terminal-xxx">
-                    <img src="clientes/Logos-clientes/yara.png" alt="Yara">
+                    <img src="Logos-clientes/unigel.png" alt="UNIGEL">
+                    <img src="Logos-clientes/isis.svg" alt="ISIS">
+                    <img src="Logos-clientes/fuller.png" alt="H.B. Fuller">
+                    <img src="Logos-clientes/ldc.png" alt="LDC. Louis Dreyfus Company">
+                    <img src="Logos-clientes/cesari.png" alt="CESARI">
+                    <img src="Logos-clientes/teg.png" alt="TEG">
+                    <img src="Logos-clientes/teag.png" alt="TEAG">
+                    <img src="Logos-clientes/tes.png" alt="TES">
+                    <img src="Logos-clientes/nita.svg" alt="nita">
+                    <img src="Logos-clientes/cdhu.png" alt="CDHU">
+                    <img src="Logos-clientes/hidromar.png" alt="HIDROMAR">
+                    <img src="Logos-clientes/citrosuco.png" alt="Citrosuco">
+                    <img src="Logos-clientes/ctm.svg" alt="Ctm">
+                    <img src="Logos-clientes/ideal.png" alt="Ideal">
+                    <img src="Logos-clientes/terminal-xxx.jpg" alt="Terminal-xxx">
+                    <img src="Logos-clientes/yara.png" alt="Yara">
+                   
+                    <img src="Logos-clientes/unigel.png" alt="UNIGEL">
+                    <img src="Logos-clientes/isis.svg" alt="ISIS">
+                    <img src="Logos-clientes/fuller.png" alt="H.B. Fuller">
+                    <img src="Logos-clientes/ldc.png" alt="LDC. Louis Dreyfus Company">
+                    <img src="Logos-clientes/cesari.png" alt="CESARI">
+                    <img src="Logos-clientes/teg.png" alt="TEG">
+                    <img src="Logos-clientes/teag.png" alt="TEAG">
+                    <img src="Logos-clientes/tes.png" alt="TES">
+                    <img src="Logos-clientes/nita.svg" alt="nita">
+                    <img src="Logos-clientes/cdhu.png" alt="CDHU">
+                    <img src="Logos-clientes/hidromar.png" alt="HIDROMAR">
+                    <img src="Logos-clientes/citrosuco.png" alt="Citrosuco">
+                    <img src="Logos-clientes/ctm.svg" alt="Ctm">
+                    <img src="Logos-clientes/ideal.png" alt="Ideal">
+                    <img src="Logos-clientes/terminal-xxx.jpg" alt="Terminal-xxx">
+                    <img src="Logos-clientes/yara.png" alt="Yara">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer class="footer" style="margin-top: 0;">
         <div class="contato-principal">
             <div class="local">
