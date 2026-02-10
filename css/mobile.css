@@ -1,11 +1,5 @@
 
-/* ===============================
-   RESPONSIVO - CELULAR
-   Telas até 768px
-================================ */
 @media (max-width: 768px) {
-
-    /* -------- GERAL -------- */
     * {
         margin: 0;
         padding: 0;
@@ -17,12 +11,8 @@
     }
 
     section {
-        padding: 60px 0; /* menos espaço vertical */
+        padding: 60px 0;
     }
-
-    /* -------- HEADER -------- */
-
-
 
     .header .container {
         display: flex;
@@ -70,7 +60,6 @@
         width: 100px;
     }
 
-
     .logo:hover{
         transform: scale(1.3);
         transition: all 1s ease;
@@ -80,15 +69,12 @@
         display: block;
     }
     
-
     .menu a {
         padding: 0px 0;
         text-align: center;
         font-size: 14px;
     }
 
-
-    /*Titulos e paragrafos*/
     h1{
         font-size:30px;
     }
@@ -126,14 +112,11 @@
         margin-right: 2%;
     }
 
-
     #orcamento{
         border-radius: 40px;
         padding: 10px 10px;
         font-size: 0.9rem;
     }
-
-    /* -------- FOOTER -------- */
 
     .contato-principal {
         flex-direction: column;

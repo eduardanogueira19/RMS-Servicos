@@ -17,7 +17,6 @@
 
 
     <style>
-        /* FORMULÁRIO */
         .form-section {
             padding: 100px 0;
             background: #f8fafcff;
@@ -43,7 +42,6 @@
             font-size: 1rem;
         }   
 
-        /* Campos */
         .form-container label {
             display: block;
             margin-bottom: 5px;
@@ -68,13 +66,11 @@
             outline: none;
         }
 
-        /* Textarea */
         .form-container textarea {
             resize: vertical;
             min-height: 120px;
         }
 
-        /* Botão */
         .form-container button {
             width: 100%;
             padding: 14px;
@@ -95,7 +91,7 @@
 
 </head>
 <body>
-    <!-- HEADER -->
+
     <header class="header">
         <div class="container">
             <a href="../index.html"><img 
@@ -146,7 +142,6 @@
                     <label>Cargo desejado</label>
                     <input type="text" name="cargo">
 
-                     <!-- 🔽 CAMPO CURRÍCULO -->
                     <label>Anexar currículo</label>
                     <input 
                         type="file" 
@@ -165,7 +160,6 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer class="footer">
         <div class="contato-principal">
             <div class="local">
@@ -187,15 +181,12 @@
             <p>Design: <a href="https://wa.me/5513988431354">Nogueira</a></p>
     </div>
 
-
     <script>
         function enviarWhatsApp() {
             const nome = document.querySelector('[name="nome"]').value;
             const telefone = document.querySelector('[name="telefone"]').value;
             const mensagem = document.querySelector('[name="mensagem"]').value;
-
             const texto = `Nome: ${nome}%0ATelefone: ${telefone}%0AMensagem: ${mensagem}`;
-
             window.open(`https://wa.me/5513999999999?text=${texto}`, '_blank');
         }
     </script>
