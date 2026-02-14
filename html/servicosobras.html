@@ -66,7 +66,7 @@
             text-align: center;
         }
 
-        @media (max-width:768px){
+        @media (max-width:575.98px){
             .servicos-grid {
                 display: grid;
                 grid-template-columns: repeat(1, minmax(20px, 1fr));
@@ -75,6 +75,18 @@
             }
             .servico:hover{
                 transform: scale(1);
+                transition: all 1s ease;
+            }
+        }
+        @media (min-width: 768px) and (max-width:991.98px){
+            .servicos-grid {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(20px, 1fr));
+                gap: 20px;
+                margin-top: 40px;
+            }
+            .servico:hover{
+                transform: scale(1.05);
                 transition: all 1s ease;
             }
         }
@@ -136,7 +148,7 @@
             </div>
 
             <div class="servico"><a href="https://wa.me/5513988431354" target="_blank">
-                <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7" alt="Automação elétrica">
+                <img src="../imagens/servicos/aterramento.png" alt="Aterramento e SPDA">
                 <h3>Aterramento e SPDA</h3>
                 <p>Proteção e conformidade para reduzir riscos e falhas. </p></a>
             </div>

@@ -74,7 +74,7 @@
             text-align: center;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 575.98px) {
             section h1 {
                 font-size: 25px;
                 text-align: center;
@@ -122,6 +122,53 @@
 
         }
 
+        @media (min-width: 768px) and (max-width:991.98px){
+            section h1 {
+                font-size: 25px;
+                text-align: center;
+            }
+
+            section p {
+                font-size: 15px;
+                line-height: 1.7;
+                padding: 0 20px;
+                text-align: justify;
+            }
+
+            section{
+                padding: 0;
+            }
+
+            .servicos {
+                padding: 20px 20px;
+                
+            }
+
+            .servicos-grid {
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                gap: 16px;
+                margin-top: 1px;
+                margin-bottom: 0px;
+            }
+
+            .servico img {
+                margin-top: 20px;
+                width: auto;
+                height: 70px;
+                object-fit: cover;
+            }
+
+            .servico h3 {
+                color: #f8fafcff;
+                margin: 5px 0 10px;
+                justify-content: center;
+            }
+
+            .servico p {
+                padding: 0 0px 0px;
+                font-size: 14px;
+            }
+        }
     </style>
 
 </head>
@@ -204,7 +251,7 @@
         </div>
             
     </footer>
-    <div class="rodape2">
+    <div class="rodape2" style="margin-bottom: 0px;">
             <p>© 2026 - RMS Serviços. Todos os direitos reservados.</p>
             <p>Design: <a href="https://wa.me/5513988431354">Nogueira</a></p>
     </div>
