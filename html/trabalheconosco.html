@@ -228,7 +228,7 @@
                 <h1>Trabalhe Conosco</h1>
                 <p>Faça parte do nosso time. Preencha o formulário abaixo:</p>
 
-                <form action="https://formsubmit.co/eduardanogueira812@gmail.com" method="POST">
+                <form onsubmit="enviarWhatsApp(event)">
 
                     <input type="hidden" name="_subject" value="Currículo - Trabalhe Conosco RMS">
                     <input type="hidden" name="_captcha" value="false">
@@ -284,6 +284,23 @@
             <p>Design: <a href="https://wa.me/5513988431354">Nogueira</a></p>
     </div>
 
+    <script>
+        function enviarWhatsApp(e) {
+            e.preventDefault();
+
+        const nome = document.getElementById("nome").value;
+        const email = document.getElementById("email").value;
+        const msg = document.getElementById("mensagem").value;
+
+        const texto = `Olá!%0A
+        Nome: ${nome}%0A
+        Email: ${email}%0A
+        Mensagem: ${msg}`;
+
+        const numero = "5513996991542"; // WhatsApp da empresa
+        window.open(`https://wa.me/${numero}?text=${texto}`, "_blank");
+        }
+    </script>
     <script>
         function enviarWhatsApp() {
             const nome = document.querySelector('[name="nome"]').value;
