@@ -127,9 +127,14 @@ Extra Large Device: min-width: 1200px)
     .contato-principal {
         flex-direction: column;
         gap: 20px;
-        text-align: center;
+        
     }
 
+    .local,
+    .contatos,
+    .juntese {
+        min-width: 200px;
+    }
     .rodape2 {
         flex-direction: column;
         height: auto;
