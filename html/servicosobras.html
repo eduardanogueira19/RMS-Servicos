@@ -38,14 +38,8 @@
             transition: all 1s ease;
         }
 
-        .servico img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-        }
-
         .servico h3 {
-            color: #9e0e0e;
+            color: #fe0000;
             margin: 15px 0 10px;
         }
 
@@ -59,6 +53,25 @@
             color: black;
             text-align: center;
             
+        }
+
+        .carousel{
+            position: relative;
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .carousel img{
+            position: static;
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: none;
+        }
+
+        .carousel img.active{
+            display: block;
         }
 
         #sub{
@@ -132,58 +145,124 @@
 
         <div class="servicos-grid">
 
-            <div class="servico"><a href="https://wa.me/5513988431354" target="_blank">
-                <img src="../imagens/servicos/projetos-eletricos.png" alt="Projetos Elétricos">
+            <div class="servico">
+                <a href="https://wa.me/5513988431354" target="_blank">
+                <div class="carousel">
+                    <img src="../imagens/servicos/8. Projetos Elétricos/1.jpg" class="active">
+                </div>
+
                 <h3>Projetos Elétricos</h3>
-                <p>Elaboração de projetos completos e executáveis — do estudo ao detalhamento. </p>
             </a>
             </div>
 
-            <div class="servico"><a href="https://wa.me/5513988431354" target="_blank">
-                <img src="../imagens/servicos/luminotecnicos.png" alt="Luminotécnicos">
+            <div class="servico">
+                <a href="https://wa.me/5513988431354" target="_blank">
+                <div class="carousel">
+                    <img src="../imagens/servicos/4. Iluminação/1.jpg" class="active">
+                    <img src="../imagens/servicos/4. Iluminação/2.jpeg">
+                    <img src="../imagens/servicos/4. Iluminação/3.jpeg">
+                    <img src="../imagens/servicos/4. Iluminação/4.jpeg">
+                    <img src="../imagens/servicos/4. Iluminação/5.jpeg">
+                </div>
                 <h3>Luminotécnicos</h3>
-                <p>Projetos de Iluminação e exercio de forma eficiente e bem dimensionada.</p></a>
+                </a>
             </div>
 
-            <div class="servico"><a href="https://wa.me/5513988431354" target="_blank">
-                <img src="../imagens/servicos/automacao.png" alt="Automação e Instrumentação">
+            <div class="servico">
+                <a href="https://wa.me/5513988431354" target="_blank">
+                <div class="carousel">
+                    <img src="../imagens/servicos/7. Automação e Programação/1.jpg" class="active">
+                    <img src="../imagens/servicos/7. Automação e Programação/2.JPEG">
+                    <img src="../imagens/servicos/7. Automação e Programação/3.jpeg">
+                    <img src="../imagens/servicos/7. Automação e Programação/4.jpeg">
+                    <img src="../imagens/servicos/7. Automação e Programação/5.jpeg">
+                    <img src="../imagens/servicos/7. Automação e Programação/6.jpeg">
+                </div>
                 <h3>Automação e Instrumentação</h3>
-                <p>Integração e controle com confiabilidade, elevando produtividade e segurança operacional. </p></a>
+                </a>
             </div>
 
-            <div class="servico"><a href="https://wa.me/5513988431354" target="_blank">
-                <img src="../imagens/servicos/aterramento.png" alt="Aterramento e SPDA">
+            <div class="servico">
+                <a href="https://wa.me/5513988431354" target="_blank">
+                <div class="carousel">
+                    <img src="../imagens/servicos/5. Aterramento e SPDA/1.jpeg" class="active">
+                    <img src="../imagens/servicos/5. Aterramento e SPDA/2.JPEG">
+                    <img src="../imagens/servicos/5. Aterramento e SPDA/3.JPEG">
+                    <img src="../imagens/servicos/5. Aterramento e SPDA/4.jpeg">
+                    <img src="../imagens/servicos/5. Aterramento e SPDA/5.jpeg">
+                    <img src="../imagens/servicos/5. Aterramento e SPDA/6.jpeg">
+                    <img src="../imagens/servicos/5. Aterramento e SPDA/7.jpeg">
+                </div>
                 <h3>Aterramento e SPDA</h3>
-                <p>Proteção e conformidade para reduzir riscos e falhas. </p></a>
+                </a>
             </div>
 
-            <div class="servico"><a href="https://wa.me/5513988431354" target="_blank">
-                <img src="../imagens/servicos/paineis.png" alt="Painéis Elétricos">
+            <div class="servico">
+                <a href="https://wa.me/5513988431354" target="_blank">
+                <div class="carousel">
+                    <img src="../imagens/servicos/1. Painéis Elétricos/1.JPEG" class="active">
+                    <img src="../imagens/servicos/1. Painéis Elétricos/2.JPEG">
+                    <img src="../imagens/servicos/1. Painéis Elétricos/3.JPEG">
+                    <img src="../imagens/servicos/1. Painéis Elétricos/4.JPEG">
+                    <img src="../imagens/servicos/1. Painéis Elétricos/5.jpeg">
+                    <img src="../imagens/servicos/1. Painéis Elétricos/6.JPEG">
+                    <img src="../imagens/servicos/1. Painéis Elétricos/7.JPEG">
+                    <!--Tem mais imagens-->
+                </div>
                 <h3>Painéis Elétricos</h3>
-                <p>Montagem e adequação de painéis. </p></a>
+                </a>
             </div>
 
-            <div class="servico"><a href="https://wa.me/5513988431354" target="_blank">
-                <img src="../imagens/servicos/ccm.png" alt="Centro de Controle de Motores (CCM)">
+            <div class="servico">
+                <a href="https://wa.me/5513988431354" target="_blank">
+                <div class="carousel">
+                    <img src="../imagens/servicos/3. CCM/1.jpeg" class="active">
+                    <img src="../imagens/servicos/3. CCM/2.JPEG">
+                    <img src="../imagens/servicos/3. CCM/3.jpeg">
+                    <img src="../imagens/servicos/3. CCM/4.jpeg">
+                    <img src="../imagens/servicos/3. CCM/5.JPEG">
+                    <img src="../imagens/servicos/3. CCM/6.jpeg">
+                </div>
                 <h3>Centro de Controle de Motores (CCM)</h3>
-                <p>Comando e proteção.</p></a>
+                </a>
             </div>
 
-            <div class="servico"><a href="https://wa.me/5513988431354" target="_blank">
-                <img src="../imagens/servicos/postes.png" alt="Postes e Postes de Entrada">
+            <div class="servico">
+                <a href="https://wa.me/5513988431354" target="_blank">
+                <div class="carousel">
+                    <img src="../imagens/servicos/6.  Postes e Postes de entrada/1.jpeg" class="active">
+                    <img src="../imagens/servicos/6.  Postes e Postes de entrada/2.jpeg">
+                    <img src="../imagens/servicos/6.  Postes e Postes de entrada/3.jpeg">
+                </div>
                 <h3>Postes e Postes de Entrada</h3>
-                <p>Implantação de postes e entrada de energia com segurança e conformidade. </p></a>
+                </a>
             </div>
 
-            <div class="servico"><a href="https://wa.me/5513988431354" target="_blank">
-                <img src="../imagens/servicos/nr.png" alt="NR10, NR12, NR13 e AVCB">
+            <div class="servico">
+                <a href="https://wa.me/5513988431354" target="_blank">
+                <div class="carousel">
+                    <img src="../imagens/servicos/" class="active">
+                    <img src="../imagens/servicos/3. CCM/2.JPEG">
+                    <img src="../imagens/servicos/3. CCM/3.jpeg">
+                    <img src="../imagens/servicos/3. CCM/4.jpeg">
+                    <img src="../imagens/servicos/3. CCM/5.JPEG">
+                    <img src="../imagens/servicos/3. CCM/6.jpeg">
+                </div>
                 <h3>NR10, NR12, NR13 e AVCB</h3>
-                <p>Adequações e laudos para atendimento normativo e suporte à regularização.</p></a>
+                </a>
             </div>
             <div class="servico"><a href="https://wa.me/5513988431354" target="_blank">
-                <img src="../imagens/servicos/outros.png" alt="Outros Serviços">
+                <div class="carousel">
+                    <img src="../imagens/servicos/9. Outros/1.jpeg" class="active">
+                    <img src="../imagens/servicos/9. Outros/2.jpeg">
+                    <img src="../imagens/servicos/9. Outros/3.jpeg">
+                    <img src="../imagens/servicos/9. Outros/4.jpeg">
+                    <img src="../imagens/servicos/9. Outros/5.jpeg">
+                    <img src="../imagens/servicos/9. Outros/6.jpeg">
+                    <!-- Imagens adicionais -->
+                </div>
                 <h3>Outros Serviços</h3>
-                <p>Serviços complementares e especializados para atendimento completo.</p></a>
+               </a>
             </div>
         </div>
 
@@ -211,5 +290,27 @@
     </div>
 
     <script src="../js/menu.js"></script>
+    <script>
+
+        const carousels = document.querySelectorAll(".carousel");
+
+        carousels.forEach(carousel => {
+
+        const images = carousel.querySelectorAll("img");
+        let index = 0;
+
+        setInterval(() => {
+
+            images[index].classList.remove("active");
+
+            index = (index + 1) % images.length;
+
+            images[index].classList.add("active");
+
+        }, 3000);
+
+        });
+
+</script>
 </body>
 </html>
