@@ -38,22 +38,21 @@
             transition: all 1s ease;
         }
 
-        .servico h3 {
+        .servico h3 a{
             color: #fe0000;
             margin: 15px 0 10px;
+            font-size: 20px;
+            padding: 10px 10px;
+            text-align: center;
+            text-decoration: none;
         }
 
         .servico p {
             padding: 0 15px 20px;
-            font-size: 15px;
+            font-size: 5px;
             
         }
-        .servico a{
-            text-decoration: none;
-            color: black;
-            text-align: center;
-            
-        }
+        
 
         .carousel{
             position: relative;
@@ -78,6 +77,29 @@
             justify-content: center;
             text-align: center;
         }
+
+        .carousel button{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0,0,0,0.4);
+            border: none;
+            color: white;
+            font-size: 20px;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+
+.carousel .prev{
+    left: 5px;
+}
+
+.carousel .next{
+    right: 5px;
+}
+
 
         @media (max-width:575.98px){
             .servicos-grid {
@@ -146,8 +168,9 @@
         <div class="servicos-grid">
 
             <div class="servico">
-                <a href="https://wa.me/5513988431354" target="_blank">
+               
                 <div class="carousel">
+                    <button class="prev">&#10094;</button>
                     <img src="../imagens/servicos/1. Painéis Elétricos/1.JPEG" class="active">
                     <img src="../imagens/servicos/1. Painéis Elétricos/2.JPEG">
                     <img src="../imagens/servicos/1. Painéis Elétricos/3.JPEG">
@@ -156,55 +179,61 @@
                     <img src="../imagens/servicos/1. Painéis Elétricos/6.JPEG">
                     <img src="../imagens/servicos/1. Painéis Elétricos/7.JPEG">
                     <!--Tem mais imagens-->
+                    <button class="next">&#10095;</button>
                 </div>
-                <h3>Painéis Elétricos</h3>
-                </a>
+                <h3><a href="https://wa.me/5513988431354" target="_blank">Painéis Elétricos</a></h3>
+                
             </div>
 
             <div class="servico">
-                <a href="https://wa.me/5513988431354" target="_blank">
+                
                 <div class="carousel">
+                    <button class="prev">&#10094;</button>
                     <img src="../imagens/servicos/2. Infraestrutura/1.JPEG" class="active">
                     <img src="../imagens/servicos/2. Infraestrutura/2.JPEG">
                     <img src="../imagens/servicos/2. Infraestrutura/3.JPEG">
                     <img src="../imagens/servicos/2. Infraestrutura/4.jpeg">
                     <img src="../imagens/servicos/2. Infraestrutura/5.jpeg">
                     <img src="../imagens/servicos/2. Infraestrutura/6.JPEG">
+                    <button class="next">&#10095;</button>
                 </div>
-                <h3>Infraestrutura</h3>
-                </a>
+                <h3><a href="https://wa.me/5513988431354" target="_blank">Infraestrutura</a></h3>
+
             </div>
 
             <div class="servico">
-                <a href="https://wa.me/5513988431354" target="_blank">
+                
                 <div class="carousel">
+                    <button class="prev">&#10094;</button>
                     <img src="../imagens/servicos/3. CCM/1.jpeg" class="active">
                     <img src="../imagens/servicos/3. CCM/2.JPEG">
                     <img src="../imagens/servicos/3. CCM/3.jpeg">
                     <img src="../imagens/servicos/3. CCM/4.jpeg">
                     <img src="../imagens/servicos/3. CCM/5.JPEG">
                     <img src="../imagens/servicos/3. CCM/6.jpeg">
+                    <button class="next">&#10095;</button>
                 </div>
-                <h3>Centro de Controle de Motores (CCM)</h3>
-                </a>
+                <h3><a href="https://wa.me/5513988431354" target="_blank">Centro de Controle de Motores (CCM)</a></h3>
             </div>
 
             <div class="servico">
-                <a href="https://wa.me/5513988431354" target="_blank">
+                
                 <div class="carousel">
+                    <button class="prev">&#10094;</button>
                     <img src="../imagens/servicos/4. Iluminação/1.jpg" class="active">
                     <img src="../imagens/servicos/4. Iluminação/2.jpeg">
                     <img src="../imagens/servicos/4. Iluminação/3.jpeg">
                     <img src="../imagens/servicos/4. Iluminação/4.jpeg">
                     <img src="../imagens/servicos/4. Iluminação/5.jpeg">
+                    <button class="next">&#10095;</button>
                 </div>
-                <h3>Iluminação</h3>
-                </a>
+                <h3><a href="https://wa.me/5513988431354" target="_blank">Iluminação</a></h3>
             </div>
 
             <div class="servico">
-                <a href="https://wa.me/5513988431354" target="_blank">
+        
                 <div class="carousel">
+                    <button class="prev">&#10094;</button>
                     <img src="../imagens/servicos/5. Aterramento e SPDA/1.jpeg" class="active">
                     <img src="../imagens/servicos/5. Aterramento e SPDA/2.JPEG">
                     <img src="../imagens/servicos/5. Aterramento e SPDA/3.JPEG">
@@ -212,47 +241,49 @@
                     <img src="../imagens/servicos/5. Aterramento e SPDA/5.jpeg">
                     <img src="../imagens/servicos/5. Aterramento e SPDA/6.jpeg">
                     <img src="../imagens/servicos/5. Aterramento e SPDA/7.jpeg">
+                    <button class="next">&#10095;</button>
                 </div>
-                <h3>Aterramento e SPDA</h3>
-                </a>
+                <h3><a href="https://wa.me/5513988431354" target="_blank">Aterramento e SPDA</a></h3>
             </div>
 
             <div class="servico">
-                <a href="https://wa.me/5513988431354" target="_blank">
+                
                 <div class="carousel">
+                    <button class="prev">&#10094;</button>
                     <img src="../imagens/servicos/6.  Postes e Postes de entrada/1.jpeg" class="active">
                     <img src="../imagens/servicos/6.  Postes e Postes de entrada/2.jpeg">
                     <img src="../imagens/servicos/6.  Postes e Postes de entrada/3.jpeg">
+                    <button class="next">&#10095;</button>
                 </div>
-                <h3>Postes e Postes de Entrada</h3>
-                </a>
+                <h3><a href="https://wa.me/5513988431354" target="_blank">Postes e Postes de Entrada</a></h3>
             </div>
 
             <div class="servico">
-                <a href="https://wa.me/5513988431354" target="_blank">
+                
                 <div class="carousel">
+                    <button class="prev">&#10094;</button>
                     <img src="../imagens/servicos/7. Automação e Programação/1.jpg" class="active">
                     <img src="../imagens/servicos/7. Automação e Programação/2.JPEG">
                     <img src="../imagens/servicos/7. Automação e Programação/3.jpeg">
                     <img src="../imagens/servicos/7. Automação e Programação/4.jpeg">
                     <img src="../imagens/servicos/7. Automação e Programação/5.jpeg">
                     <img src="../imagens/servicos/7. Automação e Programação/6.jpeg">
+                    <button class="next">&#10095;</button>
                 </div>
-                <h3>Automação e Programação</h3>
-                </a>
+                <h3><a href="https://wa.me/5513988431354" target="_blank">Automação e Programação</a></h3>
             </div>
 
             <div class="servico">
-                <a href="https://wa.me/5513988431354" target="_blank">
+                
                 <div class="carousel">
                     <img src="../imagens/servicos/8. Projetos Elétricos/1.jpg" class="active">
                 </div>
-                <h3>Projetos Elétricos</h3>
-            </a>
+                <h3><a href="https://wa.me/5513988431354" target="_blank">Projetos Elétricos</a></h3>
             </div>
 
-            <div class="servico"><a href="https://wa.me/5513988431354" target="_blank">
+            <div class="servico">
                 <div class="carousel">
+                    <button class="prev">&#10094;</button>
                     <img src="../imagens/servicos/9. Outros/1.jpeg" class="active">
                     <img src="../imagens/servicos/9. Outros/2.jpeg">
                     <img src="../imagens/servicos/9. Outros/3.jpeg">
@@ -260,9 +291,9 @@
                     <img src="../imagens/servicos/9. Outros/5.jpeg">
                     <img src="../imagens/servicos/9. Outros/6.jpeg">
                     <!-- Imagens adicionais -->
+                     <button class="next">&#10095;</button>
                 </div>
-                <h3>Outros Serviços</h3>
-               </a>
+                <h3><a href="https://wa.me/5513988431354" target="_blank">Outros Serviços</a></h3>
             </div>
         </div>
 
@@ -292,24 +323,36 @@
     <script src="../js/menu.js"></script>
     <script>
 
-        const carousels = document.querySelectorAll(".carousel");
+        document.querySelectorAll(".carousel").forEach(carousel => {
 
-        carousels.forEach(carousel => {
+    const images = carousel.querySelectorAll("img");
+    const prev = carousel.querySelector(".prev");
+    const next = carousel.querySelector(".next");
 
-        const images = carousel.querySelectorAll("img");
-        let index = 0;
+    let index = 0;
 
-        setInterval(() => {
+    function showImage(i){
+        images.forEach(img => img.classList.remove("active"));
+        images[i].classList.add("active");
+    }
 
-            images[index].classList.remove("active");
+    next.addEventListener("click", () => {
+        index++;
+        if(index >= images.length){
+            index = 0;
+        }
+        showImage(index);
+    });
 
-            index = (index + 1) % images.length;
+    prev.addEventListener("click", () => {
+        index--;
+        if(index < 0){
+            index = images.length - 1;
+        }
+        showImage(index);
+    });
 
-            images[index].classList.add("active");
-
-        }, 3000);
-
-        });
+});
 
 </script>
 </body>
